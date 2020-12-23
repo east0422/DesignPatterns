@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4553C46D2593795300856E84 /* SFBasePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C46C2593795300856E84 /* SFBasePhone.m */; };
+		4553C471259379AF00856E84 /* SFApplePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C470259379AF00856E84 /* SFApplePhone.m */; };
+		4553C474259379BC00856E84 /* SFAndroidPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C473259379BC00856E84 /* SFAndroidPhone.m */; };
+		4553C477259379DC00856E84 /* SFHammerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C476259379DC00856E84 /* SFHammerPhone.m */; };
+		4553C47A25937B0C00856E84 /* SFPhoneFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C47925937B0C00856E84 /* SFPhoneFactory.m */; };
+		4553C47E259383C100856E84 /* AFFactoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C47D259383C100856E84 /* AFFactoryManager.m */; };
+		4553C485259387A300856E84 /* AFBaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C484259387A300856E84 /* AFBaseFactory.m */; };
+		4553C488259387ED00856E84 /* AFBasePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C487259387ED00856E84 /* AFBasePhone.m */; };
+		4553C48B259387F800856E84 /* AFBaseWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C48A259387F800856E84 /* AFBaseWatch.m */; };
+		4553C48E2593880200856E84 /* AFBaseTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C48D2593880200856E84 /* AFBaseTV.m */; };
+		4553C49125938C7E00856E84 /* AFAppleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C49025938C7E00856E84 /* AFAppleFactory.m */; };
+		4553C49425938C8C00856E84 /* AFAndroidFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C49325938C8C00856E84 /* AFAndroidFactory.m */; };
+		4553C49725938C9F00856E84 /* AFApplePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C49625938C9F00856E84 /* AFApplePhone.m */; };
+		4553C49A25938CA800856E84 /* AFAndroidPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C49925938CA800856E84 /* AFAndroidPhone.m */; };
+		4553C49D25938CB700856E84 /* AFAppleWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C49C25938CB700856E84 /* AFAppleWatch.m */; };
+		4553C4A025938CBF00856E84 /* AFAndroidWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C49F25938CBF00856E84 /* AFAndroidWatch.m */; };
+		4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C4A225938CCF00856E84 /* AFAppleTV.m */; };
+		4553C4A625938CDA00856E84 /* AFAndroidTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C4A525938CDA00856E84 /* AFAndroidTV.m */; };
 		45E520152590E7140012E838 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E520142590E7140012E838 /* AppDelegate.m */; };
 		45E520182590E7140012E838 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E520172590E7140012E838 /* SceneDelegate.m */; };
 		45E5201B2590E7140012E838 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E5201A2590E7140012E838 /* ViewController.m */; };
@@ -17,6 +35,43 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4553C46B2593795300856E84 /* SFBasePhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBasePhone.h; sourceTree = "<group>"; };
+		4553C46C2593795300856E84 /* SFBasePhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFBasePhone.m; sourceTree = "<group>"; };
+		4553C46E2593797300856E84 /* SFPhoneProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPhoneProtocol.h; sourceTree = "<group>"; };
+		4553C46F259379AF00856E84 /* SFApplePhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFApplePhone.h; sourceTree = "<group>"; };
+		4553C470259379AF00856E84 /* SFApplePhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFApplePhone.m; sourceTree = "<group>"; };
+		4553C472259379BC00856E84 /* SFAndroidPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAndroidPhone.h; sourceTree = "<group>"; };
+		4553C473259379BC00856E84 /* SFAndroidPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAndroidPhone.m; sourceTree = "<group>"; };
+		4553C475259379DC00856E84 /* SFHammerPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHammerPhone.h; sourceTree = "<group>"; };
+		4553C476259379DC00856E84 /* SFHammerPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHammerPhone.m; sourceTree = "<group>"; };
+		4553C47825937B0C00856E84 /* SFPhoneFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPhoneFactory.h; sourceTree = "<group>"; };
+		4553C47925937B0C00856E84 /* SFPhoneFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPhoneFactory.m; sourceTree = "<group>"; };
+		4553C47C259383C100856E84 /* AFFactoryManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFFactoryManager.h; sourceTree = "<group>"; };
+		4553C47D259383C100856E84 /* AFFactoryManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFFactoryManager.m; sourceTree = "<group>"; };
+		4553C483259387A300856E84 /* AFBaseFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFBaseFactory.h; sourceTree = "<group>"; };
+		4553C484259387A300856E84 /* AFBaseFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFBaseFactory.m; sourceTree = "<group>"; };
+		4553C486259387ED00856E84 /* AFBasePhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFBasePhone.h; sourceTree = "<group>"; };
+		4553C487259387ED00856E84 /* AFBasePhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFBasePhone.m; sourceTree = "<group>"; };
+		4553C489259387F800856E84 /* AFBaseWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFBaseWatch.h; sourceTree = "<group>"; };
+		4553C48A259387F800856E84 /* AFBaseWatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFBaseWatch.m; sourceTree = "<group>"; };
+		4553C48C2593880200856E84 /* AFBaseTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFBaseTV.h; sourceTree = "<group>"; };
+		4553C48D2593880200856E84 /* AFBaseTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFBaseTV.m; sourceTree = "<group>"; };
+		4553C48F25938C7E00856E84 /* AFAppleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAppleFactory.h; sourceTree = "<group>"; };
+		4553C49025938C7E00856E84 /* AFAppleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAppleFactory.m; sourceTree = "<group>"; };
+		4553C49225938C8C00856E84 /* AFAndroidFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAndroidFactory.h; sourceTree = "<group>"; };
+		4553C49325938C8C00856E84 /* AFAndroidFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAndroidFactory.m; sourceTree = "<group>"; };
+		4553C49525938C9F00856E84 /* AFApplePhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFApplePhone.h; sourceTree = "<group>"; };
+		4553C49625938C9F00856E84 /* AFApplePhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFApplePhone.m; sourceTree = "<group>"; };
+		4553C49825938CA800856E84 /* AFAndroidPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAndroidPhone.h; sourceTree = "<group>"; };
+		4553C49925938CA800856E84 /* AFAndroidPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAndroidPhone.m; sourceTree = "<group>"; };
+		4553C49B25938CB700856E84 /* AFAppleWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAppleWatch.h; sourceTree = "<group>"; };
+		4553C49C25938CB700856E84 /* AFAppleWatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAppleWatch.m; sourceTree = "<group>"; };
+		4553C49E25938CBF00856E84 /* AFAndroidWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAndroidWatch.h; sourceTree = "<group>"; };
+		4553C49F25938CBF00856E84 /* AFAndroidWatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAndroidWatch.m; sourceTree = "<group>"; };
+		4553C4A125938CCF00856E84 /* AFAppleTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAppleTV.h; sourceTree = "<group>"; };
+		4553C4A225938CCF00856E84 /* AFAppleTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAppleTV.m; sourceTree = "<group>"; };
+		4553C4A425938CDA00856E84 /* AFAndroidTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAndroidTV.h; sourceTree = "<group>"; };
+		4553C4A525938CDA00856E84 /* AFAndroidTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAndroidTV.m; sourceTree = "<group>"; };
 		45E520102590E7140012E838 /* DesignPatternsOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E520132590E7140012E838 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45E520142590E7140012E838 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +97,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4553C46A2593746800856E84 /* simpleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				4553C46B2593795300856E84 /* SFBasePhone.h */,
+				4553C46C2593795300856E84 /* SFBasePhone.m */,
+				4553C46E2593797300856E84 /* SFPhoneProtocol.h */,
+				4553C46F259379AF00856E84 /* SFApplePhone.h */,
+				4553C470259379AF00856E84 /* SFApplePhone.m */,
+				4553C472259379BC00856E84 /* SFAndroidPhone.h */,
+				4553C473259379BC00856E84 /* SFAndroidPhone.m */,
+				4553C475259379DC00856E84 /* SFHammerPhone.h */,
+				4553C476259379DC00856E84 /* SFHammerPhone.m */,
+				4553C47825937B0C00856E84 /* SFPhoneFactory.h */,
+				4553C47925937B0C00856E84 /* SFPhoneFactory.m */,
+			);
+			path = simpleFactory;
+			sourceTree = "<group>";
+		};
+		4553C47B2593838700856E84 /* abstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				4553C482259383E400856E84 /* tv */,
+				4553C481259383DD00856E84 /* watch */,
+				4553C480259383D500856E84 /* phone */,
+				4553C47F259383CC00856E84 /* factory */,
+				4553C47C259383C100856E84 /* AFFactoryManager.h */,
+				4553C47D259383C100856E84 /* AFFactoryManager.m */,
+			);
+			path = abstractFactory;
+			sourceTree = "<group>";
+		};
+		4553C47F259383CC00856E84 /* factory */ = {
+			isa = PBXGroup;
+			children = (
+				4553C483259387A300856E84 /* AFBaseFactory.h */,
+				4553C484259387A300856E84 /* AFBaseFactory.m */,
+				4553C48F25938C7E00856E84 /* AFAppleFactory.h */,
+				4553C49025938C7E00856E84 /* AFAppleFactory.m */,
+				4553C49225938C8C00856E84 /* AFAndroidFactory.h */,
+				4553C49325938C8C00856E84 /* AFAndroidFactory.m */,
+			);
+			path = factory;
+			sourceTree = "<group>";
+		};
+		4553C480259383D500856E84 /* phone */ = {
+			isa = PBXGroup;
+			children = (
+				4553C486259387ED00856E84 /* AFBasePhone.h */,
+				4553C487259387ED00856E84 /* AFBasePhone.m */,
+				4553C49525938C9F00856E84 /* AFApplePhone.h */,
+				4553C49625938C9F00856E84 /* AFApplePhone.m */,
+				4553C49825938CA800856E84 /* AFAndroidPhone.h */,
+				4553C49925938CA800856E84 /* AFAndroidPhone.m */,
+			);
+			path = phone;
+			sourceTree = "<group>";
+		};
+		4553C481259383DD00856E84 /* watch */ = {
+			isa = PBXGroup;
+			children = (
+				4553C489259387F800856E84 /* AFBaseWatch.h */,
+				4553C48A259387F800856E84 /* AFBaseWatch.m */,
+				4553C49B25938CB700856E84 /* AFAppleWatch.h */,
+				4553C49C25938CB700856E84 /* AFAppleWatch.m */,
+				4553C49E25938CBF00856E84 /* AFAndroidWatch.h */,
+				4553C49F25938CBF00856E84 /* AFAndroidWatch.m */,
+			);
+			path = watch;
+			sourceTree = "<group>";
+		};
+		4553C482259383E400856E84 /* tv */ = {
+			isa = PBXGroup;
+			children = (
+				4553C48C2593880200856E84 /* AFBaseTV.h */,
+				4553C48D2593880200856E84 /* AFBaseTV.m */,
+				4553C4A125938CCF00856E84 /* AFAppleTV.h */,
+				4553C4A225938CCF00856E84 /* AFAppleTV.m */,
+				4553C4A425938CDA00856E84 /* AFAndroidTV.h */,
+				4553C4A525938CDA00856E84 /* AFAndroidTV.m */,
+			);
+			path = tv;
+			sourceTree = "<group>";
+		};
 		45E520072590E7140012E838 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +228,8 @@
 		45E5202D2590E7F60012E838 /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				4553C47B2593838700856E84 /* abstractFactory */,
+				4553C46A2593746800856E84 /* simpleFactory */,
 			);
 			path = structural;
 			sourceTree = "<group>";
@@ -178,10 +318,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4553C49A25938CA800856E84 /* AFAndroidPhone.m in Sources */,
+				4553C49725938C9F00856E84 /* AFApplePhone.m in Sources */,
+				4553C46D2593795300856E84 /* SFBasePhone.m in Sources */,
+				4553C4A625938CDA00856E84 /* AFAndroidTV.m in Sources */,
+				4553C485259387A300856E84 /* AFBaseFactory.m in Sources */,
+				4553C471259379AF00856E84 /* SFApplePhone.m in Sources */,
+				4553C4A025938CBF00856E84 /* AFAndroidWatch.m in Sources */,
+				4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */,
+				4553C488259387ED00856E84 /* AFBasePhone.m in Sources */,
+				4553C49425938C8C00856E84 /* AFAndroidFactory.m in Sources */,
 				45E5201B2590E7140012E838 /* ViewController.m in Sources */,
+				4553C49125938C7E00856E84 /* AFAppleFactory.m in Sources */,
 				45E520152590E7140012E838 /* AppDelegate.m in Sources */,
+				4553C47E259383C100856E84 /* AFFactoryManager.m in Sources */,
+				4553C47A25937B0C00856E84 /* SFPhoneFactory.m in Sources */,
+				4553C477259379DC00856E84 /* SFHammerPhone.m in Sources */,
 				45E520262590E7170012E838 /* main.m in Sources */,
 				45E520182590E7140012E838 /* SceneDelegate.m in Sources */,
+				4553C48B259387F800856E84 /* AFBaseWatch.m in Sources */,
+				4553C48E2593880200856E84 /* AFBaseTV.m in Sources */,
+				4553C474259379BC00856E84 /* SFAndroidPhone.m in Sources */,
+				4553C49D25938CB700856E84 /* AFAppleWatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
