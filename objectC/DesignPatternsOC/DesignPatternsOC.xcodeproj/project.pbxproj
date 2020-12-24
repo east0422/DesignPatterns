@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		455200CA2594D82100AD8F8D /* SingletonUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200C92594D82100AD8F8D /* SingletonUserInfo.m */; };
+		455200CD2594DE3B00AD8F8D /* SingletonSubUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200CC2594DE3B00AD8F8D /* SingletonSubUserInfo.m */; };
 		4553C46D2593795300856E84 /* SFBasePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C46C2593795300856E84 /* SFBasePhone.m */; };
 		4553C471259379AF00856E84 /* SFApplePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C470259379AF00856E84 /* SFApplePhone.m */; };
 		4553C474259379BC00856E84 /* SFAndroidPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C473259379BC00856E84 /* SFAndroidPhone.m */; };
@@ -35,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		455200C82594D82100AD8F8D /* SingletonUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonUserInfo.h; sourceTree = "<group>"; };
+		455200C92594D82100AD8F8D /* SingletonUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonUserInfo.m; sourceTree = "<group>"; };
+		455200CB2594DE3B00AD8F8D /* SingletonSubUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonSubUserInfo.h; sourceTree = "<group>"; };
+		455200CC2594DE3B00AD8F8D /* SingletonSubUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonSubUserInfo.m; sourceTree = "<group>"; };
 		4553C46B2593795300856E84 /* SFBasePhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBasePhone.h; sourceTree = "<group>"; };
 		4553C46C2593795300856E84 /* SFBasePhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFBasePhone.m; sourceTree = "<group>"; };
 		4553C46E2593797300856E84 /* SFPhoneProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPhoneProtocol.h; sourceTree = "<group>"; };
@@ -97,6 +103,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		455200C72594D73600AD8F8D /* singleton */ = {
+			isa = PBXGroup;
+			children = (
+				455200C82594D82100AD8F8D /* SingletonUserInfo.h */,
+				455200C92594D82100AD8F8D /* SingletonUserInfo.m */,
+				455200CB2594DE3B00AD8F8D /* SingletonSubUserInfo.h */,
+				455200CC2594DE3B00AD8F8D /* SingletonSubUserInfo.m */,
+			);
+			path = singleton;
+			sourceTree = "<group>";
+		};
 		4553C46A2593746800856E84 /* simpleFactory */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +245,7 @@
 		45E5202D2590E7F60012E838 /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				455200C72594D73600AD8F8D /* singleton */,
 				4553C47B2593838700856E84 /* abstractFactory */,
 				4553C46A2593746800856E84 /* simpleFactory */,
 			);
@@ -331,6 +349,7 @@
 				45E5201B2590E7140012E838 /* ViewController.m in Sources */,
 				4553C49125938C7E00856E84 /* AFAppleFactory.m in Sources */,
 				45E520152590E7140012E838 /* AppDelegate.m in Sources */,
+				455200CA2594D82100AD8F8D /* SingletonUserInfo.m in Sources */,
 				4553C47E259383C100856E84 /* AFFactoryManager.m in Sources */,
 				4553C47A25937B0C00856E84 /* SFPhoneFactory.m in Sources */,
 				4553C477259379DC00856E84 /* SFHammerPhone.m in Sources */,
@@ -338,6 +357,7 @@
 				45E520182590E7140012E838 /* SceneDelegate.m in Sources */,
 				4553C48B259387F800856E84 /* AFBaseWatch.m in Sources */,
 				4553C48E2593880200856E84 /* AFBaseTV.m in Sources */,
+				455200CD2594DE3B00AD8F8D /* SingletonSubUserInfo.m in Sources */,
 				4553C474259379BC00856E84 /* SFAndroidPhone.m in Sources */,
 				4553C49D25938CB700856E84 /* AFAppleWatch.m in Sources */,
 			);
