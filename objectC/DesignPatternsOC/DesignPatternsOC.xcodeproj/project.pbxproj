@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		455200CA2594D82100AD8F8D /* SingletonUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200C92594D82100AD8F8D /* SingletonUserInfo.m */; };
-		455200CD2594DE3B00AD8F8D /* SingletonSubUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200CC2594DE3B00AD8F8D /* SingletonSubUserInfo.m */; };
+		455200CA2594D82100AD8F8D /* SSingletonUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200C92594D82100AD8F8D /* SSingletonUserInfo.m */; };
+		455200CD2594DE3B00AD8F8D /* SSingletonSubUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200CC2594DE3B00AD8F8D /* SSingletonSubUserInfo.m */; };
+		455200D12594EE2300AD8F8D /* BCarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200D02594EE2300AD8F8D /* BCarBuilder.m */; };
+		455200DB2594F14E00AD8F8D /* BEngineOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200DA2594F14E00AD8F8D /* BEngineOne.m */; };
+		455200DE2594F15C00AD8F8D /* BWheelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200DD2594F15C00AD8F8D /* BWheelOne.m */; };
+		455200E12594F16900AD8F8D /* BDoorOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200E02594F16900AD8F8D /* BDoorOne.m */; };
+		455200E42594F17300AD8F8D /* BBodyOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200E32594F17300AD8F8D /* BBodyOne.m */; };
 		4553C46D2593795300856E84 /* SFBasePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C46C2593795300856E84 /* SFBasePhone.m */; };
 		4553C471259379AF00856E84 /* SFApplePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C470259379AF00856E84 /* SFApplePhone.m */; };
 		4553C474259379BC00856E84 /* SFAndroidPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C473259379BC00856E84 /* SFAndroidPhone.m */; };
@@ -37,10 +42,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		455200C82594D82100AD8F8D /* SingletonUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonUserInfo.h; sourceTree = "<group>"; };
-		455200C92594D82100AD8F8D /* SingletonUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonUserInfo.m; sourceTree = "<group>"; };
-		455200CB2594DE3B00AD8F8D /* SingletonSubUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonSubUserInfo.h; sourceTree = "<group>"; };
-		455200CC2594DE3B00AD8F8D /* SingletonSubUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonSubUserInfo.m; sourceTree = "<group>"; };
+		455200C82594D82100AD8F8D /* SSingletonUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonUserInfo.h; sourceTree = "<group>"; };
+		455200C92594D82100AD8F8D /* SSingletonUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSingletonUserInfo.m; sourceTree = "<group>"; };
+		455200CB2594DE3B00AD8F8D /* SSingletonSubUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonSubUserInfo.h; sourceTree = "<group>"; };
+		455200CC2594DE3B00AD8F8D /* SSingletonSubUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSingletonSubUserInfo.m; sourceTree = "<group>"; };
+		455200CF2594EE2300AD8F8D /* BCarBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCarBuilder.h; sourceTree = "<group>"; };
+		455200D02594EE2300AD8F8D /* BCarBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCarBuilder.m; sourceTree = "<group>"; };
+		455200D22594EF6900AD8F8D /* BCarBuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCarBuilderProtocol.h; sourceTree = "<group>"; };
+		455200D42594F02B00AD8F8D /* BEngineBuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEngineBuilderProtocol.h; sourceTree = "<group>"; };
+		455200D52594F04500AD8F8D /* BWheelBuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWheelBuilderProtocol.h; sourceTree = "<group>"; };
+		455200D62594F06B00AD8F8D /* BDoorBuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDoorBuilderProtocol.h; sourceTree = "<group>"; };
+		455200D72594F08900AD8F8D /* BBodyBuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBodyBuilderProtocol.h; sourceTree = "<group>"; };
+		455200D92594F14E00AD8F8D /* BEngineOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEngineOne.h; sourceTree = "<group>"; };
+		455200DA2594F14E00AD8F8D /* BEngineOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BEngineOne.m; sourceTree = "<group>"; };
+		455200DC2594F15C00AD8F8D /* BWheelOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWheelOne.h; sourceTree = "<group>"; };
+		455200DD2594F15C00AD8F8D /* BWheelOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWheelOne.m; sourceTree = "<group>"; };
+		455200DF2594F16900AD8F8D /* BDoorOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDoorOne.h; sourceTree = "<group>"; };
+		455200E02594F16900AD8F8D /* BDoorOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDoorOne.m; sourceTree = "<group>"; };
+		455200E22594F17300AD8F8D /* BBodyOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBodyOne.h; sourceTree = "<group>"; };
+		455200E32594F17300AD8F8D /* BBodyOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBodyOne.m; sourceTree = "<group>"; };
 		4553C46B2593795300856E84 /* SFBasePhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBasePhone.h; sourceTree = "<group>"; };
 		4553C46C2593795300856E84 /* SFBasePhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFBasePhone.m; sourceTree = "<group>"; };
 		4553C46E2593797300856E84 /* SFPhoneProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPhoneProtocol.h; sourceTree = "<group>"; };
@@ -106,12 +126,50 @@
 		455200C72594D73600AD8F8D /* singleton */ = {
 			isa = PBXGroup;
 			children = (
-				455200C82594D82100AD8F8D /* SingletonUserInfo.h */,
-				455200C92594D82100AD8F8D /* SingletonUserInfo.m */,
-				455200CB2594DE3B00AD8F8D /* SingletonSubUserInfo.h */,
-				455200CC2594DE3B00AD8F8D /* SingletonSubUserInfo.m */,
+				455200C82594D82100AD8F8D /* SSingletonUserInfo.h */,
+				455200C92594D82100AD8F8D /* SSingletonUserInfo.m */,
+				455200CB2594DE3B00AD8F8D /* SSingletonSubUserInfo.h */,
+				455200CC2594DE3B00AD8F8D /* SSingletonSubUserInfo.m */,
 			);
 			path = singleton;
+			sourceTree = "<group>";
+		};
+		455200CE2594EDB000AD8F8D /* builder */ = {
+			isa = PBXGroup;
+			children = (
+				455200D82594F11500AD8F8D /* bconcrete */,
+				455200D32594EF6E00AD8F8D /* bprotocols */,
+				455200CF2594EE2300AD8F8D /* BCarBuilder.h */,
+				455200D02594EE2300AD8F8D /* BCarBuilder.m */,
+			);
+			path = builder;
+			sourceTree = "<group>";
+		};
+		455200D32594EF6E00AD8F8D /* bprotocols */ = {
+			isa = PBXGroup;
+			children = (
+				455200D22594EF6900AD8F8D /* BCarBuilderProtocol.h */,
+				455200D42594F02B00AD8F8D /* BEngineBuilderProtocol.h */,
+				455200D52594F04500AD8F8D /* BWheelBuilderProtocol.h */,
+				455200D62594F06B00AD8F8D /* BDoorBuilderProtocol.h */,
+				455200D72594F08900AD8F8D /* BBodyBuilderProtocol.h */,
+			);
+			path = bprotocols;
+			sourceTree = "<group>";
+		};
+		455200D82594F11500AD8F8D /* bconcrete */ = {
+			isa = PBXGroup;
+			children = (
+				455200D92594F14E00AD8F8D /* BEngineOne.h */,
+				455200DA2594F14E00AD8F8D /* BEngineOne.m */,
+				455200DC2594F15C00AD8F8D /* BWheelOne.h */,
+				455200DD2594F15C00AD8F8D /* BWheelOne.m */,
+				455200DF2594F16900AD8F8D /* BDoorOne.h */,
+				455200E02594F16900AD8F8D /* BDoorOne.m */,
+				455200E22594F17300AD8F8D /* BBodyOne.h */,
+				455200E32594F17300AD8F8D /* BBodyOne.m */,
+			);
+			path = bconcrete;
 			sourceTree = "<group>";
 		};
 		4553C46A2593746800856E84 /* simpleFactory */ = {
@@ -217,8 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				45E5202F2590E7FF0012E838 /* behavioral */,
-				45E5202E2590E7FB0012E838 /* creational */,
-				45E5202D2590E7F60012E838 /* structural */,
+				45E5202E2590E7FB0012E838 /* structural */,
+				45E5202D2590E7F60012E838 /* creational */,
 				45E5202C2590E74D0012E838 /* basicPrinciples */,
 				45E520132590E7140012E838 /* AppDelegate.h */,
 				45E520142590E7140012E838 /* AppDelegate.m */,
@@ -242,21 +300,23 @@
 			path = basicPrinciples;
 			sourceTree = "<group>";
 		};
-		45E5202D2590E7F60012E838 /* structural */ = {
+		45E5202D2590E7F60012E838 /* creational */ = {
 			isa = PBXGroup;
 			children = (
+				45ED52A425975ED000C91CD2 /* prototype */,
+				455200CE2594EDB000AD8F8D /* builder */,
 				455200C72594D73600AD8F8D /* singleton */,
 				4553C47B2593838700856E84 /* abstractFactory */,
 				4553C46A2593746800856E84 /* simpleFactory */,
 			);
-			path = structural;
+			path = creational;
 			sourceTree = "<group>";
 		};
-		45E5202E2590E7FB0012E838 /* creational */ = {
+		45E5202E2590E7FB0012E838 /* structural */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = creational;
+			path = structural;
 			sourceTree = "<group>";
 		};
 		45E5202F2590E7FF0012E838 /* behavioral */ = {
@@ -264,6 +324,13 @@
 			children = (
 			);
 			path = behavioral;
+			sourceTree = "<group>";
+		};
+		45ED52A425975ED000C91CD2 /* prototype */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = prototype;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,24 +407,29 @@
 				4553C49725938C9F00856E84 /* AFApplePhone.m in Sources */,
 				4553C46D2593795300856E84 /* SFBasePhone.m in Sources */,
 				4553C4A625938CDA00856E84 /* AFAndroidTV.m in Sources */,
+				455200E42594F17300AD8F8D /* BBodyOne.m in Sources */,
+				455200DE2594F15C00AD8F8D /* BWheelOne.m in Sources */,
 				4553C485259387A300856E84 /* AFBaseFactory.m in Sources */,
 				4553C471259379AF00856E84 /* SFApplePhone.m in Sources */,
 				4553C4A025938CBF00856E84 /* AFAndroidWatch.m in Sources */,
 				4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */,
 				4553C488259387ED00856E84 /* AFBasePhone.m in Sources */,
+				455200DB2594F14E00AD8F8D /* BEngineOne.m in Sources */,
 				4553C49425938C8C00856E84 /* AFAndroidFactory.m in Sources */,
 				45E5201B2590E7140012E838 /* ViewController.m in Sources */,
 				4553C49125938C7E00856E84 /* AFAppleFactory.m in Sources */,
 				45E520152590E7140012E838 /* AppDelegate.m in Sources */,
-				455200CA2594D82100AD8F8D /* SingletonUserInfo.m in Sources */,
+				455200CA2594D82100AD8F8D /* SSingletonUserInfo.m in Sources */,
 				4553C47E259383C100856E84 /* AFFactoryManager.m in Sources */,
 				4553C47A25937B0C00856E84 /* SFPhoneFactory.m in Sources */,
 				4553C477259379DC00856E84 /* SFHammerPhone.m in Sources */,
 				45E520262590E7170012E838 /* main.m in Sources */,
 				45E520182590E7140012E838 /* SceneDelegate.m in Sources */,
+				455200E12594F16900AD8F8D /* BDoorOne.m in Sources */,
+				455200D12594EE2300AD8F8D /* BCarBuilder.m in Sources */,
 				4553C48B259387F800856E84 /* AFBaseWatch.m in Sources */,
 				4553C48E2593880200856E84 /* AFBaseTV.m in Sources */,
-				455200CD2594DE3B00AD8F8D /* SingletonSubUserInfo.m in Sources */,
+				455200CD2594DE3B00AD8F8D /* SSingletonSubUserInfo.m in Sources */,
 				4553C474259379BC00856E84 /* SFAndroidPhone.m in Sources */,
 				4553C49D25938CB700856E84 /* AFAppleWatch.m in Sources */,
 			);

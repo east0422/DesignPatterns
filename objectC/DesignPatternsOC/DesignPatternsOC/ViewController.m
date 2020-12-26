@@ -7,10 +7,19 @@
 //
 
 #import "ViewController.h"
-#import "structural/simpleFactory/SFPhoneFactory.h"
-#import "structural/abstractFactory/AFFactoryManager.h"
-#import "structural/singleton/SingletonUserInfo.h"
-#import "structural/singleton/SingletonSubUserInfo.h"
+// 简单工厂
+#import "creational/simpleFactory/SFPhoneFactory.h"
+// 抽象工厂
+#import "creational/abstractFactory/AFFactoryManager.h"
+// 单例
+#import "creational/singleton/SSingletonUserInfo.h"
+#import "creational/singleton/SSingletonSubUserInfo.h"
+// 建造者
+#import "creational/builder/BCarBuilder.h"
+#import "creational/builder/bconcrete/BEngineOne.h"
+#import "creational/builder/bconcrete/BWheelOne.h"
+#import "creational/builder/bconcrete/BDoorOne.h"
+#import "creational/builder/bconcrete/BBodyOne.h"
 
 @interface ViewController ()
 
@@ -30,7 +39,9 @@
     
 //    [self testAbstractFactory];
     
-    [self testSingleton];
+//    [self testSingleton];
+    
+    [self testBuilder];
 }
 
 // 简单工厂
@@ -59,7 +70,7 @@
 
 // 单例初始化用户信息
 - (void)initUserInfo {
-    SingletonUserInfo *userInfo = [SingletonUserInfo defaultUserInfo];
+    SSingletonUserInfo *userInfo = [SSingletonUserInfo defaultUserInfo];
     userInfo.name = @"张三";
     userInfo.age = [NSNumber numberWithInt:32];
     userInfo.sex = SexFemale;
@@ -77,15 +88,28 @@
     // 单例初始化用户信息
     [self initUserInfo];
     // 单例获取用户信息
-    SingletonUserInfo *userInfo = [SingletonUserInfo defaultUserInfo];
+    SSingletonUserInfo *userInfo = [SSingletonUserInfo defaultUserInfo];
     NSLog(@"%@", userInfo);
-    NSLog(@"%@", [[SingletonUserInfo alloc] init]);
+    NSLog(@"%@", [[SSingletonUserInfo alloc] init]);
     NSLog(@"%@", [userInfo copy]);
     NSLog(@"%@", [userInfo mutableCopy]);
     
     // 单例子类获取用户信息
-//    SingletonSubUserInfo *subUserInfo = [SingletonSubUserInfo defaultUserInfo];
+//    SSingletonSubUserInfo *subUserInfo = [SSingletonSubUserInfo defaultUserInfo];
 //    NSLog(@"%@", subUserInfo);
+}
+
+// 建造者
+- (void)testBuilder {
+    BCarBuilder *car = [[BCarBuilder alloc] init];
+    car.engine = [[BEngineOne alloc] init];
+    car.wheel = [[BWheelOne alloc] init];
+    car.door = [[BDoorOne alloc] init];
+    car.body = [[BBodyOne alloc] init];
+    
+    [car buildAll];
+    
+    NSLog(@"%@", car.info);
 }
 
 @end

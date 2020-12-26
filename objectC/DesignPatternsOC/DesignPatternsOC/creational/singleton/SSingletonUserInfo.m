@@ -1,17 +1,17 @@
 //
-//  SingletonUserInfo.m
+//  SSingletonUserInfo.m
 //  DesignPatternsOC
 //
 //  Created by dfang on 2020-12-24.
 //  Copyright © 2020 east. All rights reserved.
 //
 
-#import "SingletonUserInfo.h"
+#import "SSingletonUserInfo.h"
 
-@implementation SingletonUserInfo
+@implementation SSingletonUserInfo
 
 // 全局变量
-static SingletonUserInfo *userInfo = nil;
+static SSingletonUserInfo *userInfo = nil;
 
 // 单例方法
 + (instancetype)defaultUserInfo {
@@ -25,8 +25,8 @@ static SingletonUserInfo *userInfo = nil;
         userInfo = [super init];
     });
     // 阻止子类使用
-    if (![NSStringFromClass([self class]) isEqualToString:@"SingletonUserInfo"]) {
-        NSLog(@"SingletonUserInfo子类不允许使用defaultUserInfo");
+    if (![NSStringFromClass([self class]) isEqualToString:@"SSingletonUserInfo"]) {
+        NSLog(@"SSingletonUserInfo子类不允许使用defaultUserInfo");
         // 断言
         NSAssert(false, @"不允许使用defaultUserInfo");
     }
@@ -41,8 +41,8 @@ static SingletonUserInfo *userInfo = nil;
         userInfo = [super allocWithZone:zone];
     });
     // 阻止子类使用
-    if (![NSStringFromClass([self class]) isEqualToString:@"SingletonUserInfo"]) {
-        NSLog(@"SingletonUserInfo子类不允许使用defaultUserInfo");
+    if (![NSStringFromClass([self class]) isEqualToString:@"SSingletonUserInfo"]) {
+        NSLog(@"SSingletonUserInfo子类不允许使用defaultUserInfo");
         // 断言
         NSAssert(false, @"不允许使用defaultUserInfo");
     }

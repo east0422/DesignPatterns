@@ -1,5 +1,5 @@
 //
-//  SingletonUserInfo.h
+//  SSingletonUserInfo.h
 //  DesignPatternsOC
 //
 //  Created by dfang on 2020-12-24.
@@ -15,7 +15,7 @@ typedef enum : NSUInteger {
     SexFemale,
 } ESexType;
 
-@interface SingletonUserInfo : NSObject
+@interface SSingletonUserInfo : NSObject
 
 /** 姓名 */
 @property (nonatomic, strong) NSString *name;
