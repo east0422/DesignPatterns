@@ -20,6 +20,8 @@
 #import "creational/builder/bconcrete/BWheelOne.h"
 #import "creational/builder/bconcrete/BDoorOne.h"
 #import "creational/builder/bconcrete/BBodyOne.h"
+// 原型
+#import "creational/prototype/PReceiptModel.h"
 
 @interface ViewController ()
 
@@ -41,7 +43,9 @@
     
 //    [self testSingleton];
     
-    [self testBuilder];
+//    [self testBuilder];
+    
+    [self testPrototype];
 }
 
 // 简单工厂
@@ -110,6 +114,23 @@
     [car buildAll];
     
     NSLog(@"%@", car.info);
+}
+
+// 原型
+- (void)testPrototype {
+    PReceiptModel *receiptOne = [[[PReceiptModel class] alloc] init];
+    receiptOne.payer = @"张三";
+    receiptOne.payee = @"李四";
+    receiptOne.date = @"2000-12-01";
+    receiptOne.amount = 1000.f;
+    receiptOne.content = @"还款";
+    
+    PReceiptModel *receiptTwo = [receiptOne clone];
+    receiptTwo.payer = @"王五";
+    receiptTwo.date = @"2010-01-01";
+    receiptTwo.amount = 1999.9;
+    
+    NSLog(@"\none: %@\ntwo:%@", receiptOne, receiptTwo);
 }
 
 @end

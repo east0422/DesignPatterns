@@ -32,6 +32,7 @@
 		4553C4A025938CBF00856E84 /* AFAndroidWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C49F25938CBF00856E84 /* AFAndroidWatch.m */; };
 		4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C4A225938CCF00856E84 /* AFAppleTV.m */; };
 		4553C4A625938CDA00856E84 /* AFAndroidTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C4A525938CDA00856E84 /* AFAndroidTV.m */; };
+		457C75E8259A22B700545A64 /* PReceiptModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C75E7259A22B700545A64 /* PReceiptModel.m */; };
 		45E520152590E7140012E838 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E520142590E7140012E838 /* AppDelegate.m */; };
 		45E520182590E7140012E838 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E520172590E7140012E838 /* SceneDelegate.m */; };
 		45E5201B2590E7140012E838 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E5201A2590E7140012E838 /* ViewController.m */; };
@@ -98,6 +99,9 @@
 		4553C4A225938CCF00856E84 /* AFAppleTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAppleTV.m; sourceTree = "<group>"; };
 		4553C4A425938CDA00856E84 /* AFAndroidTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAndroidTV.h; sourceTree = "<group>"; };
 		4553C4A525938CDA00856E84 /* AFAndroidTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAndroidTV.m; sourceTree = "<group>"; };
+		457C75E5259A201F00545A64 /* PCopyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCopyProtocol.h; sourceTree = "<group>"; };
+		457C75E6259A22B700545A64 /* PReceiptModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PReceiptModel.h; sourceTree = "<group>"; };
+		457C75E7259A22B700545A64 /* PReceiptModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PReceiptModel.m; sourceTree = "<group>"; };
 		45E520102590E7140012E838 /* DesignPatternsOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E520132590E7140012E838 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45E520142590E7140012E838 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -329,6 +333,9 @@
 		45ED52A425975ED000C91CD2 /* prototype */ = {
 			isa = PBXGroup;
 			children = (
+				457C75E5259A201F00545A64 /* PCopyProtocol.h */,
+				457C75E6259A22B700545A64 /* PReceiptModel.h */,
+				457C75E7259A22B700545A64 /* PReceiptModel.m */,
 			);
 			path = prototype;
 			sourceTree = "<group>";
@@ -406,6 +413,7 @@
 				4553C49A25938CA800856E84 /* AFAndroidPhone.m in Sources */,
 				4553C49725938C9F00856E84 /* AFApplePhone.m in Sources */,
 				4553C46D2593795300856E84 /* SFBasePhone.m in Sources */,
+				457C75E8259A22B700545A64 /* PReceiptModel.m in Sources */,
 				4553C4A625938CDA00856E84 /* AFAndroidTV.m in Sources */,
 				455200E42594F17300AD8F8D /* BBodyOne.m in Sources */,
 				455200DE2594F15C00AD8F8D /* BWheelOne.m in Sources */,
