@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450663162614E71D000D06C6 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 450663152614E71D000D06C6 /* Circle.m */; };
+		450663192614E7BD000D06C6 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 450663182614E7BD000D06C6 /* Rectangle.m */; };
+		4506631C2614E7ED000D06C6 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 4506631B2614E7ED000D06C6 /* Square.m */; };
+		4506631F2614E828000D06C6 /* ShapeMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4506631E2614E828000D06C6 /* ShapeMaker.m */; };
 		455200CA2594D82100AD8F8D /* SSingletonUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200C92594D82100AD8F8D /* SSingletonUserInfo.m */; };
 		455200CD2594DE3B00AD8F8D /* SSingletonSubUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200CC2594DE3B00AD8F8D /* SSingletonSubUserInfo.m */; };
 		455200D12594EE2300AD8F8D /* BCarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200D02594EE2300AD8F8D /* BCarBuilder.m */; };
@@ -43,6 +47,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		450663132614E6D1000D06C6 /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		450663142614E71D000D06C6 /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		450663152614E71D000D06C6 /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		450663172614E7BD000D06C6 /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		450663182614E7BD000D06C6 /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		4506631A2614E7ED000D06C6 /* Square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		4506631B2614E7ED000D06C6 /* Square.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		4506631D2614E828000D06C6 /* ShapeMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeMaker.h; sourceTree = "<group>"; };
+		4506631E2614E828000D06C6 /* ShapeMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeMaker.m; sourceTree = "<group>"; };
 		455200C82594D82100AD8F8D /* SSingletonUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonUserInfo.h; sourceTree = "<group>"; };
 		455200C92594D82100AD8F8D /* SSingletonUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSingletonUserInfo.m; sourceTree = "<group>"; };
 		455200CB2594DE3B00AD8F8D /* SSingletonSubUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonSubUserInfo.h; sourceTree = "<group>"; };
@@ -127,6 +140,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		450663122614D5BA000D06C6 /* facade */ = {
+			isa = PBXGroup;
+			children = (
+				450663132614E6D1000D06C6 /* Shape.h */,
+				450663142614E71D000D06C6 /* Circle.h */,
+				450663152614E71D000D06C6 /* Circle.m */,
+				450663172614E7BD000D06C6 /* Rectangle.h */,
+				450663182614E7BD000D06C6 /* Rectangle.m */,
+				4506631A2614E7ED000D06C6 /* Square.h */,
+				4506631B2614E7ED000D06C6 /* Square.m */,
+				4506631D2614E828000D06C6 /* ShapeMaker.h */,
+				4506631E2614E828000D06C6 /* ShapeMaker.m */,
+			);
+			path = facade;
+			sourceTree = "<group>";
+		};
 		455200C72594D73600AD8F8D /* singleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +348,7 @@
 		45E5202E2590E7FB0012E838 /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				450663122614D5BA000D06C6 /* facade */,
 			);
 			path = structural;
 			sourceTree = "<group>";
@@ -416,7 +446,9 @@
 				457C75E8259A22B700545A64 /* PReceiptModel.m in Sources */,
 				4553C4A625938CDA00856E84 /* AFAndroidTV.m in Sources */,
 				455200E42594F17300AD8F8D /* BBodyOne.m in Sources */,
+				4506631F2614E828000D06C6 /* ShapeMaker.m in Sources */,
 				455200DE2594F15C00AD8F8D /* BWheelOne.m in Sources */,
+				450663162614E71D000D06C6 /* Circle.m in Sources */,
 				4553C485259387A300856E84 /* AFBaseFactory.m in Sources */,
 				4553C471259379AF00856E84 /* SFApplePhone.m in Sources */,
 				4553C4A025938CBF00856E84 /* AFAndroidWatch.m in Sources */,
@@ -433,9 +465,11 @@
 				4553C477259379DC00856E84 /* SFHammerPhone.m in Sources */,
 				45E520262590E7170012E838 /* main.m in Sources */,
 				45E520182590E7140012E838 /* SceneDelegate.m in Sources */,
+				4506631C2614E7ED000D06C6 /* Square.m in Sources */,
 				455200E12594F16900AD8F8D /* BDoorOne.m in Sources */,
 				455200D12594EE2300AD8F8D /* BCarBuilder.m in Sources */,
 				4553C48B259387F800856E84 /* AFBaseWatch.m in Sources */,
+				450663192614E7BD000D06C6 /* Rectangle.m in Sources */,
 				4553C48E2593880200856E84 /* AFBaseTV.m in Sources */,
 				455200CD2594DE3B00AD8F8D /* SSingletonSubUserInfo.m in Sources */,
 				4553C474259379BC00856E84 /* SFAndroidPhone.m in Sources */,

@@ -22,6 +22,8 @@
 #import "creational/builder/bconcrete/BBodyOne.h"
 // 原型
 #import "creational/prototype/PReceiptModel.h"
+// 外观/门面
+#import "structural/facade/ShapeMaker.h"
 
 @interface ViewController ()
 
@@ -45,7 +47,9 @@
     
 //    [self testBuilder];
     
-    [self testPrototype];
+//    [self testPrototype];
+    
+    [self testFacade];
 }
 
 // 简单工厂
@@ -131,6 +135,14 @@
     receiptTwo.amount = 1999.9;
     
     NSLog(@"\none: %@\ntwo:%@", receiptOne, receiptTwo);
+}
+
+// 外观/门面
+- (void)testFacade {
+    ShapeMaker *shape = [ShapeMaker shapeMaker];
+    [shape drawCircle];
+    [shape drawRectangle];
+    [shape drawSquare];
 }
 
 @end
