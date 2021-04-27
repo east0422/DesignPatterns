@@ -44,6 +44,11 @@
 		45E520202590E7170012E838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E5201F2590E7170012E838 /* Assets.xcassets */; };
 		45E520232590E7170012E838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E520212590E7170012E838 /* LaunchScreen.storyboard */; };
 		45E520262590E7170012E838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E520252590E7170012E838 /* main.m */; };
+		45EA05A726347BDE00CE7214 /* ChargeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EA05A626347BDE00CE7214 /* ChargeAdapter.m */; };
+		45EA05AB26347D3800CE7214 /* ChargeAdapter110.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EA05AA26347D3800CE7214 /* ChargeAdapter110.m */; };
+		45EA05AF2634803600CE7214 /* VolAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EA05AE2634803600CE7214 /* VolAdapter.m */; };
+		45EA05B22634813E00CE7214 /* Vol110.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EA05B12634813E00CE7214 /* Vol110.m */; };
+		45EA05B52634814700CE7214 /* Vol220.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EA05B42634814700CE7214 /* Vol220.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +132,18 @@
 		45E520222590E7170012E838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E520242590E7170012E838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45E520252590E7170012E838 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45EA05A526347BDE00CE7214 /* ChargeAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChargeAdapter.h; sourceTree = "<group>"; };
+		45EA05A626347BDE00CE7214 /* ChargeAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChargeAdapter.m; sourceTree = "<group>"; };
+		45EA05A826347CA100CE7214 /* Voltage220Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Voltage220Protocol.h; sourceTree = "<group>"; };
+		45EA05A926347D3800CE7214 /* ChargeAdapter110.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChargeAdapter110.h; sourceTree = "<group>"; };
+		45EA05AA26347D3800CE7214 /* ChargeAdapter110.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChargeAdapter110.m; sourceTree = "<group>"; };
+		45EA05AD2634803600CE7214 /* VolAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolAdapter.h; sourceTree = "<group>"; };
+		45EA05AE2634803600CE7214 /* VolAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolAdapter.m; sourceTree = "<group>"; };
+		45EA05B02634813E00CE7214 /* Vol110.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vol110.h; sourceTree = "<group>"; };
+		45EA05B12634813E00CE7214 /* Vol110.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vol110.m; sourceTree = "<group>"; };
+		45EA05B32634814700CE7214 /* Vol220.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vol220.h; sourceTree = "<group>"; };
+		45EA05B42634814700CE7214 /* Vol220.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vol220.m; sourceTree = "<group>"; };
+		45EA05B62634856D00CE7214 /* VolProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +171,22 @@
 				4506631E2614E828000D06C6 /* ShapeMaker.m */,
 			);
 			path = facade;
+			sourceTree = "<group>";
+		};
+		450663202614F2E7000D06C6 /* adapter */ = {
+			isa = PBXGroup;
+			children = (
+				45EA05A32634579A00CE7214 /* object */,
+				45EA05A22634579200CE7214 /* class */,
+			);
+			path = adapter;
+			sourceTree = "<group>";
+		};
+		452F147B263876E700E11F35 /* strategy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = strategy;
 			sourceTree = "<group>";
 		};
 		455200C72594D73600AD8F8D /* singleton */ = {
@@ -348,6 +381,7 @@
 		45E5202E2590E7FB0012E838 /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				450663202614F2E7000D06C6 /* adapter */,
 				450663122614D5BA000D06C6 /* facade */,
 			);
 			path = structural;
@@ -356,8 +390,35 @@
 		45E5202F2590E7FF0012E838 /* behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				452F147B263876E700E11F35 /* strategy */,
 			);
 			path = behavioral;
+			sourceTree = "<group>";
+		};
+		45EA05A22634579200CE7214 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				45EA05A526347BDE00CE7214 /* ChargeAdapter.h */,
+				45EA05A626347BDE00CE7214 /* ChargeAdapter.m */,
+				45EA05A826347CA100CE7214 /* Voltage220Protocol.h */,
+				45EA05A926347D3800CE7214 /* ChargeAdapter110.h */,
+				45EA05AA26347D3800CE7214 /* ChargeAdapter110.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		45EA05A32634579A00CE7214 /* object */ = {
+			isa = PBXGroup;
+			children = (
+				45EA05AD2634803600CE7214 /* VolAdapter.h */,
+				45EA05AE2634803600CE7214 /* VolAdapter.m */,
+				45EA05B02634813E00CE7214 /* Vol110.h */,
+				45EA05B12634813E00CE7214 /* Vol110.m */,
+				45EA05B32634814700CE7214 /* Vol220.h */,
+				45EA05B42634814700CE7214 /* Vol220.m */,
+				45EA05B62634856D00CE7214 /* VolProtocol.h */,
+			);
+			path = object;
 			sourceTree = "<group>";
 		};
 		45ED52A425975ED000C91CD2 /* prototype */ = {
@@ -445,6 +506,8 @@
 				4553C46D2593795300856E84 /* SFBasePhone.m in Sources */,
 				457C75E8259A22B700545A64 /* PReceiptModel.m in Sources */,
 				4553C4A625938CDA00856E84 /* AFAndroidTV.m in Sources */,
+				45EA05AF2634803600CE7214 /* VolAdapter.m in Sources */,
+				45EA05A726347BDE00CE7214 /* ChargeAdapter.m in Sources */,
 				455200E42594F17300AD8F8D /* BBodyOne.m in Sources */,
 				4506631F2614E828000D06C6 /* ShapeMaker.m in Sources */,
 				455200DE2594F15C00AD8F8D /* BWheelOne.m in Sources */,
@@ -464,12 +527,15 @@
 				4553C47A25937B0C00856E84 /* SFPhoneFactory.m in Sources */,
 				4553C477259379DC00856E84 /* SFHammerPhone.m in Sources */,
 				45E520262590E7170012E838 /* main.m in Sources */,
+				45EA05B22634813E00CE7214 /* Vol110.m in Sources */,
 				45E520182590E7140012E838 /* SceneDelegate.m in Sources */,
+				45EA05AB26347D3800CE7214 /* ChargeAdapter110.m in Sources */,
 				4506631C2614E7ED000D06C6 /* Square.m in Sources */,
 				455200E12594F16900AD8F8D /* BDoorOne.m in Sources */,
 				455200D12594EE2300AD8F8D /* BCarBuilder.m in Sources */,
 				4553C48B259387F800856E84 /* AFBaseWatch.m in Sources */,
 				450663192614E7BD000D06C6 /* Rectangle.m in Sources */,
+				45EA05B52634814700CE7214 /* Vol220.m in Sources */,
 				4553C48E2593880200856E84 /* AFBaseTV.m in Sources */,
 				455200CD2594DE3B00AD8F8D /* SSingletonSubUserInfo.m in Sources */,
 				4553C474259379BC00856E84 /* SFAndroidPhone.m in Sources */,

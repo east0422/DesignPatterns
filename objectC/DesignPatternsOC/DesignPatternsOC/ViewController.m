@@ -24,6 +24,12 @@
 #import "creational/prototype/PReceiptModel.h"
 // 外观/门面
 #import "structural/facade/ShapeMaker.h"
+// 类适配器
+#import "structural/adapter/class/ChargeAdapter110.h"
+// 对象适配器
+#import "structural/adapter/object/VolAdapter.h"
+#import "structural/adapter/object/Vol110.h"
+#import "structural/adapter/object/Vol220.h"
 
 @interface ViewController ()
 
@@ -49,7 +55,10 @@
     
 //    [self testPrototype];
     
-    [self testFacade];
+//    [self testFacade];
+    
+//    [self testClassAdapter];
+    [self testObjectAdapter];
 }
 
 // 简单工厂
@@ -143,6 +152,23 @@
     [shape drawCircle];
     [shape drawRectangle];
     [shape drawSquare];
+}
+
+// 类适配器
+- (void)testClassAdapter {
+    ChargeAdapter110 *chargeAdapter110 = [[ChargeAdapter110 alloc] init];
+    float voltage = [chargeAdapter110 convertToV220];
+    NSLog(@"voltage:%.2f", voltage);
+}
+
+// 对象适配器
+- (void)testObjectAdapter {
+    id vol110 = [[Vol110 alloc] init];
+    id vol220 = [[Vol220 alloc] init];
+    
+    VolAdapter *volAdapter1 = [[VolAdapter alloc] initWithVoltage:vol110];
+    VolAdapter *volAdapter2 = [[VolAdapter alloc] initWithVoltage:vol220];
+    NSLog(@"vol110:%.2f, vol220:%.2f", [volAdapter1 voltage], [volAdapter2 voltage]);
 }
 
 @end
