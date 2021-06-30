@@ -49,6 +49,11 @@
 		45EA05AF2634803600CE7214 /* VolAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EA05AE2634803600CE7214 /* VolAdapter.m */; };
 		45EA05B22634813E00CE7214 /* Vol110.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EA05B12634813E00CE7214 /* Vol110.m */; };
 		45EA05B52634814700CE7214 /* Vol220.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EA05B42634814700CE7214 /* Vol220.m */; };
+		45F23B95268CBFD9005E7047 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F23B94268CBFD9005E7047 /* BubbleSort.m */; };
+		45F23B98268CC03A005E7047 /* SelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F23B97268CC03A005E7047 /* SelectionSort.m */; };
+		45F23B9B268CC07B005E7047 /* InsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F23B9A268CC07B005E7047 /* InsertionSort.m */; };
+		45F23B9E268CC0B1005E7047 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F23B9D268CC0B1005E7047 /* QuickSort.m */; };
+		45F23BA2268CC122005E7047 /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F23BA1268CC122005E7047 /* Context.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +149,17 @@
 		45EA05B32634814700CE7214 /* Vol220.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vol220.h; sourceTree = "<group>"; };
 		45EA05B42634814700CE7214 /* Vol220.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vol220.m; sourceTree = "<group>"; };
 		45EA05B62634856D00CE7214 /* VolProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolProtocol.h; sourceTree = "<group>"; };
+		45F23B90268BF1BF005E7047 /* SortStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortStrategy.h; sourceTree = "<group>"; };
+		45F23B93268CBFD9005E7047 /* BubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
+		45F23B94268CBFD9005E7047 /* BubbleSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubbleSort.m; sourceTree = "<group>"; };
+		45F23B96268CC03A005E7047 /* SelectionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionSort.h; sourceTree = "<group>"; };
+		45F23B97268CC03A005E7047 /* SelectionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionSort.m; sourceTree = "<group>"; };
+		45F23B99268CC07B005E7047 /* InsertionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertionSort.h; sourceTree = "<group>"; };
+		45F23B9A268CC07B005E7047 /* InsertionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsertionSort.m; sourceTree = "<group>"; };
+		45F23B9C268CC0B1005E7047 /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		45F23B9D268CC0B1005E7047 /* QuickSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSort.m; sourceTree = "<group>"; };
+		45F23BA0268CC122005E7047 /* Context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		45F23BA1268CC122005E7047 /* Context.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +201,9 @@
 		452F147B263876E700E11F35 /* strategy */ = {
 			isa = PBXGroup;
 			children = (
+				45F23B9F268CC0FC005E7047 /* sort */,
+				45F23BA0268CC122005E7047 /* Context.h */,
+				45F23BA1268CC122005E7047 /* Context.m */,
 			);
 			path = strategy;
 			sourceTree = "<group>";
@@ -431,6 +450,22 @@
 			path = prototype;
 			sourceTree = "<group>";
 		};
+		45F23B9F268CC0FC005E7047 /* sort */ = {
+			isa = PBXGroup;
+			children = (
+				45F23B90268BF1BF005E7047 /* SortStrategy.h */,
+				45F23B93268CBFD9005E7047 /* BubbleSort.h */,
+				45F23B94268CBFD9005E7047 /* BubbleSort.m */,
+				45F23B96268CC03A005E7047 /* SelectionSort.h */,
+				45F23B97268CC03A005E7047 /* SelectionSort.m */,
+				45F23B99268CC07B005E7047 /* InsertionSort.h */,
+				45F23B9A268CC07B005E7047 /* InsertionSort.m */,
+				45F23B9C268CC0B1005E7047 /* QuickSort.h */,
+				45F23B9D268CC0B1005E7047 /* QuickSort.m */,
+			);
+			path = sort;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -512,15 +547,20 @@
 				4506631F2614E828000D06C6 /* ShapeMaker.m in Sources */,
 				455200DE2594F15C00AD8F8D /* BWheelOne.m in Sources */,
 				450663162614E71D000D06C6 /* Circle.m in Sources */,
+				45F23B95268CBFD9005E7047 /* BubbleSort.m in Sources */,
+				45F23B9E268CC0B1005E7047 /* QuickSort.m in Sources */,
 				4553C485259387A300856E84 /* AFBaseFactory.m in Sources */,
+				45F23B9B268CC07B005E7047 /* InsertionSort.m in Sources */,
 				4553C471259379AF00856E84 /* SFApplePhone.m in Sources */,
 				4553C4A025938CBF00856E84 /* AFAndroidWatch.m in Sources */,
+				45F23BA2268CC122005E7047 /* Context.m in Sources */,
 				4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */,
 				4553C488259387ED00856E84 /* AFBasePhone.m in Sources */,
 				455200DB2594F14E00AD8F8D /* BEngineOne.m in Sources */,
 				4553C49425938C8C00856E84 /* AFAndroidFactory.m in Sources */,
 				45E5201B2590E7140012E838 /* ViewController.m in Sources */,
 				4553C49125938C7E00856E84 /* AFAppleFactory.m in Sources */,
+				45F23B98268CC03A005E7047 /* SelectionSort.m in Sources */,
 				45E520152590E7140012E838 /* AppDelegate.m in Sources */,
 				455200CA2594D82100AD8F8D /* SSingletonUserInfo.m in Sources */,
 				4553C47E259383C100856E84 /* AFFactoryManager.m in Sources */,

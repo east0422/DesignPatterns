@@ -30,6 +30,13 @@
 #import "structural/adapter/object/VolAdapter.h"
 #import "structural/adapter/object/Vol110.h"
 #import "structural/adapter/object/Vol220.h"
+// 策略
+#import "behavioral/strategy/Context.h"
+#import "behavioral/strategy/sort/SortStrategy.h"
+#import "behavioral/strategy/sort/BubbleSort.h"
+#import "behavioral/strategy/sort/SelectionSort.h"
+#import "behavioral/strategy/sort/InsertionSort.h"
+#import "behavioral/strategy/sort/QuickSort.h"
 
 @interface ViewController ()
 
@@ -58,7 +65,10 @@
 //    [self testFacade];
     
 //    [self testClassAdapter];
-    [self testObjectAdapter];
+//    [self testObjectAdapter];
+    
+    [self testStrategy];
+    
 }
 
 // 简单工厂
@@ -169,6 +179,20 @@
     VolAdapter *volAdapter1 = [[VolAdapter alloc] initWithVoltage:vol110];
     VolAdapter *volAdapter2 = [[VolAdapter alloc] initWithVoltage:vol220];
     NSLog(@"vol110:%.2f, vol220:%.2f", [volAdapter1 voltage], [volAdapter2 voltage]);
+}
+
+// 策略
+- (void)testStrategy {
+    NSArray *arr = @[@1, @8, @4, @90, @5, @100, @2];
+    // 冒泡
+    [[[Context alloc] initWithStrategy:[BubbleSort new]] sortWithArray: arr];
+    // 选择
+    [[[Context alloc] initWithStrategy:[SelectionSort new]] sortWithArray: arr];
+    // 插入
+    [[[Context alloc] initWithStrategy:[InsertionSort new]] sortWithArray:arr];
+    // 快速
+    [[[Context alloc] initWithStrategy:[QuickSort new]] sortWithArray:arr];
+
 }
 
 @end
