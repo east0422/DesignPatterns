@@ -37,8 +37,12 @@
 #import "behavioral/strategy/sort/SelectionSort.h"
 #import "behavioral/strategy/sort/InsertionSort.h"
 #import "behavioral/strategy/sort/QuickSort.h"
+// 观察者
+#import "behavioral/observer/SubscriptionServiceCenterProtocol.h"
+#import "behavioral/observer/SubscribeServiceCenter.h"
 
-@interface ViewController ()
+
+@interface ViewController () <SubscriptionServiceCenterProtocol>
 
 @end
 
@@ -67,7 +71,9 @@
 //    [self testClassAdapter];
 //    [self testObjectAdapter];
     
-    [self testStrategy];
+//    [self testStrategy];
+    
+    [self testObserver];
     
 }
 
@@ -193,6 +199,20 @@
     // 快速
     [[[Context alloc] initWithStrategy:[QuickSort new]] sortWithArray:arr];
 
+}
+
+// 观察者
+- (void)testObserver {
+    NSString *subscribeKey = @"subscribeKey";
+    SubscribeServiceCenter *defaultCenter = [SubscribeServiceCenter defaultCenter];
+    [defaultCenter createSubscribeKey:subscribeKey];
+    [defaultCenter addSubscription:self forKey:subscribeKey];
+    
+    [defaultCenter sendMsg:@"hello" forKey:subscribeKey];
+}
+
+- (void)subscribeObj:(id)obj forKey:(NSString *)key {
+    NSLog(@"obj:%@, key: %@", obj, key);
 }
 
 @end

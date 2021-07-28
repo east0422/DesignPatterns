@@ -37,6 +37,7 @@
 		4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C4A225938CCF00856E84 /* AFAppleTV.m */; };
 		4553C4A625938CDA00856E84 /* AFAndroidTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553C4A525938CDA00856E84 /* AFAndroidTV.m */; };
 		457C75E8259A22B700545A64 /* PReceiptModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C75E7259A22B700545A64 /* PReceiptModel.m */; };
+		45E23BDE26B059F200091050 /* SubscribeServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E23BDD26B059F200091050 /* SubscribeServiceCenter.m */; };
 		45E520152590E7140012E838 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E520142590E7140012E838 /* AppDelegate.m */; };
 		45E520182590E7140012E838 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E520172590E7140012E838 /* SceneDelegate.m */; };
 		45E5201B2590E7140012E838 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E5201A2590E7140012E838 /* ViewController.m */; };
@@ -125,6 +126,9 @@
 		457C75E5259A201F00545A64 /* PCopyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCopyProtocol.h; sourceTree = "<group>"; };
 		457C75E6259A22B700545A64 /* PReceiptModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PReceiptModel.h; sourceTree = "<group>"; };
 		457C75E7259A22B700545A64 /* PReceiptModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PReceiptModel.m; sourceTree = "<group>"; };
+		45E23BD926B055FA00091050 /* SubscriptionServiceCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscriptionServiceCenterProtocol.h; sourceTree = "<group>"; };
+		45E23BDC26B059F200091050 /* SubscribeServiceCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscribeServiceCenter.h; sourceTree = "<group>"; };
+		45E23BDD26B059F200091050 /* SubscribeServiceCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscribeServiceCenter.m; sourceTree = "<group>"; };
 		45E520102590E7140012E838 /* DesignPatternsOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E520132590E7140012E838 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45E520142590E7140012E838 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -206,6 +210,16 @@
 				45F23BA1268CC122005E7047 /* Context.m */,
 			);
 			path = strategy;
+			sourceTree = "<group>";
+		};
+		45405BFB26AEFFEE008F2411 /* observer */ = {
+			isa = PBXGroup;
+			children = (
+				45E23BD926B055FA00091050 /* SubscriptionServiceCenterProtocol.h */,
+				45E23BDC26B059F200091050 /* SubscribeServiceCenter.h */,
+				45E23BDD26B059F200091050 /* SubscribeServiceCenter.m */,
+			);
+			path = observer;
 			sourceTree = "<group>";
 		};
 		455200C72594D73600AD8F8D /* singleton */ = {
@@ -409,6 +423,7 @@
 		45E5202F2590E7FF0012E838 /* behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				45405BFB26AEFFEE008F2411 /* observer */,
 				452F147B263876E700E11F35 /* strategy */,
 			);
 			path = behavioral;
@@ -566,6 +581,7 @@
 				4553C47E259383C100856E84 /* AFFactoryManager.m in Sources */,
 				4553C47A25937B0C00856E84 /* SFPhoneFactory.m in Sources */,
 				4553C477259379DC00856E84 /* SFHammerPhone.m in Sources */,
+				45E23BDE26B059F200091050 /* SubscribeServiceCenter.m in Sources */,
 				45E520262590E7170012E838 /* main.m in Sources */,
 				45EA05B22634813E00CE7214 /* Vol110.m in Sources */,
 				45E520182590E7140012E838 /* SceneDelegate.m in Sources */,
