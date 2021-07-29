@@ -40,7 +40,9 @@
 // 观察者
 #import "behavioral/observer/SubscriptionServiceCenterProtocol.h"
 #import "behavioral/observer/SubscribeServiceCenter.h"
-
+// 装饰者
+#import "structural/decorator/TeaDecorator.h"
+#import "structural/decorator/Tea+Species.h"
 
 @interface ViewController () <SubscriptionServiceCenterProtocol>
 
@@ -73,7 +75,9 @@
     
 //    [self testStrategy];
     
-    [self testObserver];
+//    [self testObserver];
+    
+    [self testDecorator];
     
 }
 
@@ -213,6 +217,18 @@
 
 - (void)subscribeObj:(id)obj forKey:(NSString *)key {
     NSLog(@"obj:%@, key: %@", obj, key);
+}
+
+// 装饰者
+- (void)testDecorator {
+    TeaDecorator *teaDecorator = [[TeaDecorator alloc] init];
+    [teaDecorator drink];
+    
+    Tea *tea = [[Tea alloc] init];
+    tea.whichSpecies = @"red tea";
+    NSLog(@"%@", tea.whichSpecies);
+    // 不需要引入Tea+Temperature分类，只要Build Phases - Compile Sources中有分类 分类中同名方法就会覆盖原类方法
+    [tea cook];
 }
 
 @end
