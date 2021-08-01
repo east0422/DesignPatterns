@@ -43,6 +43,11 @@
 // 装饰者
 #import "structural/decorator/TeaDecorator.h"
 #import "structural/decorator/Tea+Species.h"
+// 桥接器
+#import "structural/bridge/KangjiaTV.h"
+#import "structural/bridge/XiaoMiTV.h"
+#import "structural/bridge/KangjiaTeleControl.h"
+#import "structural/bridge/XiaomiTeleControl.h"
 
 @interface ViewController () <SubscriptionServiceCenterProtocol>
 
@@ -77,7 +82,9 @@
     
 //    [self testObserver];
     
-    [self testDecorator];
+//    [self testDecorator];
+    
+    [self testBridge];
     
 }
 
@@ -229,6 +236,20 @@
     NSLog(@"%@", tea.whichSpecies);
     // 不需要引入Tea+Temperature分类，只要Build Phases - Compile Sources中有分类 分类中同名方法就会覆盖原类方法
     [tea cook];
+}
+
+// 桥接器
+- (void)testBridge {
+    KangjiaTV *kjTV = [[KangjiaTV alloc] init];
+    KangjiaTeleControl *kjTeleControl = [[KangjiaTeleControl alloc] init];
+    kjTV.telecontrol = kjTeleControl;
+    [kjTV executeCommand:powerOn];
+    [kjTV executeLookBack];
+    
+    XiaoMiTV *xmTV = [[XiaoMiTV alloc] init];
+    xmTV.telecontrol = [[XiaomiTeleControl alloc] init];
+    [xmTV executeCommand:powerOn];
+    [xmTV executeCastScreen];
 }
 
 @end

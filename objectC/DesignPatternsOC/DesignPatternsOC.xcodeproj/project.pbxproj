@@ -15,6 +15,12 @@
 		4507951A26B300B400607614 /* TeaDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507951926B300B400607614 /* TeaDecorator.m */; };
 		4507952026B301D900607614 /* Tea+Species.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507951F26B301D900607614 /* Tea+Species.m */; };
 		4507952526B305E200607614 /* Tea+Temperature.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507952226B3032F00607614 /* Tea+Temperature.m */; };
+		4507953026B53BE200607614 /* TV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507952F26B53BE200607614 /* TV.m */; };
+		4507953326B53BF300607614 /* Telecontrol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953226B53BF300607614 /* Telecontrol.m */; };
+		4507953626B56F4400607614 /* KangjiaTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953526B56F4400607614 /* KangjiaTV.m */; };
+		4507953926B56F5800607614 /* XiaoMiTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953826B56F5800607614 /* XiaoMiTV.m */; };
+		4507953C26B56F7700607614 /* KangjiaTeleControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953B26B56F7700607614 /* KangjiaTeleControl.m */; };
+		4507953F26B56F8500607614 /* XiaomiTeleControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953E26B56F8500607614 /* XiaomiTeleControl.m */; };
 		455200CA2594D82100AD8F8D /* SSingletonUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200C92594D82100AD8F8D /* SSingletonUserInfo.m */; };
 		455200CD2594DE3B00AD8F8D /* SSingletonSubUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200CC2594DE3B00AD8F8D /* SSingletonSubUserInfo.m */; };
 		455200D12594EE2300AD8F8D /* BCarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200D02594EE2300AD8F8D /* BCarBuilder.m */; };
@@ -79,6 +85,18 @@
 		4507951F26B301D900607614 /* Tea+Species.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Tea+Species.m"; sourceTree = "<group>"; };
 		4507952126B3032F00607614 /* Tea+Temperature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tea+Temperature.h"; sourceTree = "<group>"; };
 		4507952226B3032F00607614 /* Tea+Temperature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Tea+Temperature.m"; sourceTree = "<group>"; };
+		4507952E26B53BE200607614 /* TV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TV.h; sourceTree = "<group>"; };
+		4507952F26B53BE200607614 /* TV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TV.m; sourceTree = "<group>"; };
+		4507953126B53BF300607614 /* Telecontrol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Telecontrol.h; sourceTree = "<group>"; };
+		4507953226B53BF300607614 /* Telecontrol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Telecontrol.m; sourceTree = "<group>"; };
+		4507953426B56F4400607614 /* KangjiaTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KangjiaTV.h; sourceTree = "<group>"; };
+		4507953526B56F4400607614 /* KangjiaTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KangjiaTV.m; sourceTree = "<group>"; };
+		4507953726B56F5800607614 /* XiaoMiTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiaoMiTV.h; sourceTree = "<group>"; };
+		4507953826B56F5800607614 /* XiaoMiTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiaoMiTV.m; sourceTree = "<group>"; };
+		4507953A26B56F7700607614 /* KangjiaTeleControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KangjiaTeleControl.h; sourceTree = "<group>"; };
+		4507953B26B56F7700607614 /* KangjiaTeleControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KangjiaTeleControl.m; sourceTree = "<group>"; };
+		4507953D26B56F8500607614 /* XiaomiTeleControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiaomiTeleControl.h; sourceTree = "<group>"; };
+		4507953E26B56F8500607614 /* XiaomiTeleControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiaomiTeleControl.m; sourceTree = "<group>"; };
 		455200C82594D82100AD8F8D /* SSingletonUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonUserInfo.h; sourceTree = "<group>"; };
 		455200C92594D82100AD8F8D /* SSingletonUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSingletonUserInfo.m; sourceTree = "<group>"; };
 		455200CB2594DE3B00AD8F8D /* SSingletonSubUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonSubUserInfo.h; sourceTree = "<group>"; };
@@ -227,6 +245,25 @@
 				4507952226B3032F00607614 /* Tea+Temperature.m */,
 			);
 			path = decorator;
+			sourceTree = "<group>";
+		};
+		4507952626B3B58700607614 /* bridge */ = {
+			isa = PBXGroup;
+			children = (
+				4507952E26B53BE200607614 /* TV.h */,
+				4507952F26B53BE200607614 /* TV.m */,
+				4507953126B53BF300607614 /* Telecontrol.h */,
+				4507953226B53BF300607614 /* Telecontrol.m */,
+				4507953426B56F4400607614 /* KangjiaTV.h */,
+				4507953526B56F4400607614 /* KangjiaTV.m */,
+				4507953726B56F5800607614 /* XiaoMiTV.h */,
+				4507953826B56F5800607614 /* XiaoMiTV.m */,
+				4507953A26B56F7700607614 /* KangjiaTeleControl.h */,
+				4507953B26B56F7700607614 /* KangjiaTeleControl.m */,
+				4507953D26B56F8500607614 /* XiaomiTeleControl.h */,
+				4507953E26B56F8500607614 /* XiaomiTeleControl.m */,
+			);
+			path = bridge;
 			sourceTree = "<group>";
 		};
 		452F147B263876E700E11F35 /* strategy */ = {
@@ -441,6 +478,7 @@
 		45E5202E2590E7FB0012E838 /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				4507952626B3B58700607614 /* bridge */,
 				4507950126B2F84100607614 /* decorator */,
 				450663202614F2E7000D06C6 /* adapter */,
 				450663122614D5BA000D06C6 /* facade */,
@@ -580,6 +618,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4507952526B305E200607614 /* Tea+Temperature.m in Sources */,
+				4507953626B56F4400607614 /* KangjiaTV.m in Sources */,
 				4553C49A25938CA800856E84 /* AFAndroidPhone.m in Sources */,
 				4553C49725938C9F00856E84 /* AFApplePhone.m in Sources */,
 				4553C46D2593795300856E84 /* SFBasePhone.m in Sources */,
@@ -588,6 +627,7 @@
 				45EA05AF2634803600CE7214 /* VolAdapter.m in Sources */,
 				45EA05A726347BDE00CE7214 /* ChargeAdapter.m in Sources */,
 				455200E42594F17300AD8F8D /* BBodyOne.m in Sources */,
+				4507953026B53BE200607614 /* TV.m in Sources */,
 				4506631F2614E828000D06C6 /* ShapeMaker.m in Sources */,
 				455200DE2594F15C00AD8F8D /* BWheelOne.m in Sources */,
 				450663162614E71D000D06C6 /* Circle.m in Sources */,
@@ -595,7 +635,10 @@
 				45F23B9E268CC0B1005E7047 /* QuickSort.m in Sources */,
 				4553C485259387A300856E84 /* AFBaseFactory.m in Sources */,
 				45F23B9B268CC07B005E7047 /* InsertionSort.m in Sources */,
+				4507953926B56F5800607614 /* XiaoMiTV.m in Sources */,
+				4507953F26B56F8500607614 /* XiaomiTeleControl.m in Sources */,
 				4553C471259379AF00856E84 /* SFApplePhone.m in Sources */,
+				4507953326B53BF300607614 /* Telecontrol.m in Sources */,
 				4553C4A025938CBF00856E84 /* AFAndroidWatch.m in Sources */,
 				45F23BA2268CC122005E7047 /* Context.m in Sources */,
 				4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */,
@@ -618,6 +661,7 @@
 				45EA05AB26347D3800CE7214 /* ChargeAdapter110.m in Sources */,
 				4506631C2614E7ED000D06C6 /* Square.m in Sources */,
 				455200E12594F16900AD8F8D /* BDoorOne.m in Sources */,
+				4507953C26B56F7700607614 /* KangjiaTeleControl.m in Sources */,
 				455200D12594EE2300AD8F8D /* BCarBuilder.m in Sources */,
 				4553C48B259387F800856E84 /* AFBaseWatch.m in Sources */,
 				4507951A26B300B400607614 /* TeaDecorator.m in Sources */,
