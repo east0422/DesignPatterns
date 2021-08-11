@@ -13,11 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol AdvanceAgentProxy <NSObject>
 
-@required
+@optional
 - (void)buy:(NSString *)goods withTip:(CGFloat)tip;
 - (void)sell:(NSString *)goods withTip:(CGFloat)tip;
 
 @optional
+- (void)cleanUp;
+- (void)call;
 - (void)buyVegetableAndCook:(NSString *)goods forMonthSalary:(CGFloat)salary;
 - (void)buy:(NSString *)goods withTip:(CGFloat)tip forBestChoice:(NSString *)choice;
 - (void)sell:(NSString *)goods withTip:(CGFloat)tip forBestChoice:(NSString *)choice;

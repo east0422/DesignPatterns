@@ -24,6 +24,9 @@
 		454273A626C3EA9300F04D74 /* Buyer.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A526C3EA9300F04D74 /* Buyer.m */; };
 		454273A926C3EAA500F04D74 /* Seller.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A826C3EAA500F04D74 /* Seller.m */; };
 		454273AC26C3EAF200F04D74 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273AB26C3EAF200F04D74 /* Agent.m */; };
+		454273B026C41D4200F04D74 /* MethodNotFound.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273AF26C41D4200F04D74 /* MethodNotFound.m */; };
+		454273B326C426F200F04D74 /* AdvanceAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273B226C426F200F04D74 /* AdvanceAgent.m */; };
+		454273B626C4281700F04D74 /* AdvanceMaleAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273B526C4281700F04D74 /* AdvanceMaleAgent.m */; };
 		455200CA2594D82100AD8F8D /* SSingletonUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200C92594D82100AD8F8D /* SSingletonUserInfo.m */; };
 		455200CD2594DE3B00AD8F8D /* SSingletonSubUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200CC2594DE3B00AD8F8D /* SSingletonSubUserInfo.m */; };
 		455200D12594EE2300AD8F8D /* BCarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200D02594EE2300AD8F8D /* BCarBuilder.m */; };
@@ -107,6 +110,12 @@
 		454273AA26C3EAF200F04D74 /* Agent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
 		454273AB26C3EAF200F04D74 /* Agent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
 		454273AD26C4094400F04D74 /* AdvanceAgentProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvanceAgentProxy.h; sourceTree = "<group>"; };
+		454273AE26C41D4200F04D74 /* MethodNotFound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodNotFound.h; sourceTree = "<group>"; };
+		454273AF26C41D4200F04D74 /* MethodNotFound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodNotFound.m; sourceTree = "<group>"; };
+		454273B126C426F200F04D74 /* AdvanceAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvanceAgent.h; sourceTree = "<group>"; };
+		454273B226C426F200F04D74 /* AdvanceAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvanceAgent.m; sourceTree = "<group>"; };
+		454273B426C4281700F04D74 /* AdvanceMaleAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvanceMaleAgent.h; sourceTree = "<group>"; };
+		454273B526C4281700F04D74 /* AdvanceMaleAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvanceMaleAgent.m; sourceTree = "<group>"; };
 		455200C82594D82100AD8F8D /* SSingletonUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonUserInfo.h; sourceTree = "<group>"; };
 		455200C92594D82100AD8F8D /* SSingletonUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSingletonUserInfo.m; sourceTree = "<group>"; };
 		455200CB2594DE3B00AD8F8D /* SSingletonSubUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonSubUserInfo.h; sourceTree = "<group>"; };
@@ -306,6 +315,12 @@
 				454273AA26C3EAF200F04D74 /* Agent.h */,
 				454273AB26C3EAF200F04D74 /* Agent.m */,
 				454273AD26C4094400F04D74 /* AdvanceAgentProxy.h */,
+				454273AE26C41D4200F04D74 /* MethodNotFound.h */,
+				454273AF26C41D4200F04D74 /* MethodNotFound.m */,
+				454273B126C426F200F04D74 /* AdvanceAgent.h */,
+				454273B226C426F200F04D74 /* AdvanceAgent.m */,
+				454273B426C4281700F04D74 /* AdvanceMaleAgent.h */,
+				454273B526C4281700F04D74 /* AdvanceMaleAgent.m */,
 			);
 			path = proxy;
 			sourceTree = "<group>";
@@ -642,10 +657,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454273B026C41D4200F04D74 /* MethodNotFound.m in Sources */,
 				4507952526B305E200607614 /* Tea+Temperature.m in Sources */,
 				4507953626B56F4400607614 /* KangjiaTV.m in Sources */,
 				4553C49A25938CA800856E84 /* AFAndroidPhone.m in Sources */,
 				4553C49725938C9F00856E84 /* AFApplePhone.m in Sources */,
+				454273B626C4281700F04D74 /* AdvanceMaleAgent.m in Sources */,
 				4553C46D2593795300856E84 /* SFBasePhone.m in Sources */,
 				457C75E8259A22B700545A64 /* PReceiptModel.m in Sources */,
 				4553C4A625938CDA00856E84 /* AFAndroidTV.m in Sources */,
@@ -666,6 +683,7 @@
 				4507953326B53BF300607614 /* Telecontrol.m in Sources */,
 				4553C4A025938CBF00856E84 /* AFAndroidWatch.m in Sources */,
 				45F23BA2268CC122005E7047 /* Context.m in Sources */,
+				454273B326C426F200F04D74 /* AdvanceAgent.m in Sources */,
 				4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */,
 				4553C488259387ED00856E84 /* AFBasePhone.m in Sources */,
 				455200DB2594F14E00AD8F8D /* BEngineOne.m in Sources */,

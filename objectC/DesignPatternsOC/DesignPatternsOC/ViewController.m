@@ -52,8 +52,10 @@
 #import "structural/proxy/Buyer.h"
 #import "structural/proxy/Seller.h"
 #import "structural/proxy/Agent.h"
+#import "structural/proxy/AdvanceMaleAgent.h"
+#import "structural/proxy/AdvanceAgentProxy.h"
 
-@interface ViewController () <SubscriptionServiceCenterProtocol>
+@interface ViewController () <SubscriptionServiceCenterProtocol, AdvanceAgentProxy>
 
 @end
 
@@ -264,10 +266,25 @@
     Buyer *buyer = [[Buyer alloc] init];
     buyer.agent = agent;
     [buyer buy: @"十斤🍎"];
-    
+
     Seller *seller = [[Seller alloc] init];
     seller.agent = agent;
     [seller sell:@"十斤🍎"];
+    
+    AdvanceMaleAgent *advanceMaleAgent = [AdvanceMaleAgent alloc];
+    advanceMaleAgent.delegate = self;
+    
+    [advanceMaleAgent call];
+    [advanceMaleAgent cleanUp];
+    [advanceMaleAgent buyVegetableAndCook:@"青椒，肉丝" forMonthSalary:10000];
+}
+
+- (void)call {
+    NSLog(@"call %@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+}
+
+- (void)cleanUp {
+    NSLog(@"proxy %@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 }
 
 @end
