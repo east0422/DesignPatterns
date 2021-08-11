@@ -106,6 +106,7 @@
 		454273A826C3EAA500F04D74 /* Seller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Seller.m; sourceTree = "<group>"; };
 		454273AA26C3EAF200F04D74 /* Agent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
 		454273AB26C3EAF200F04D74 /* Agent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
+		454273AD26C4094400F04D74 /* AdvanceAgentProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvanceAgentProxy.h; sourceTree = "<group>"; };
 		455200C82594D82100AD8F8D /* SSingletonUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonUserInfo.h; sourceTree = "<group>"; };
 		455200C92594D82100AD8F8D /* SSingletonUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSingletonUserInfo.m; sourceTree = "<group>"; };
 		455200CB2594DE3B00AD8F8D /* SSingletonSubUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonSubUserInfo.h; sourceTree = "<group>"; };
@@ -304,6 +305,7 @@
 				454273A826C3EAA500F04D74 /* Seller.m */,
 				454273AA26C3EAF200F04D74 /* Agent.h */,
 				454273AB26C3EAF200F04D74 /* Agent.m */,
+				454273AD26C4094400F04D74 /* AdvanceAgentProxy.h */,
 			);
 			path = proxy;
 			sourceTree = "<group>";
