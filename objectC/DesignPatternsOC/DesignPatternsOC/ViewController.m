@@ -48,6 +48,10 @@
 #import "structural/bridge/XiaoMiTV.h"
 #import "structural/bridge/KangjiaTeleControl.h"
 #import "structural/bridge/XiaomiTeleControl.h"
+// 代理
+#import "structural/proxy/Buyer.h"
+#import "structural/proxy/Seller.h"
+#import "structural/proxy/Agent.h"
 
 @interface ViewController () <SubscriptionServiceCenterProtocol>
 
@@ -84,7 +88,9 @@
     
 //    [self testDecorator];
     
-    [self testBridge];
+//    [self testBridge];
+    
+    [self testProxy];
     
 }
 
@@ -250,6 +256,18 @@
     xmTV.telecontrol = [[XiaomiTeleControl alloc] init];
     [xmTV executeCommand:powerOn];
     [xmTV executeCastScreen];
+}
+
+// 代理
+- (void)testProxy {
+    Agent *agent = [[Agent alloc] init];
+    Buyer *buyer = [[Buyer alloc] init];
+    buyer.agent = agent;
+    [buyer buy: @"十斤🍎"];
+    
+    Seller *seller = [[Seller alloc] init];
+    seller.agent = agent;
+    [seller sell:@"十斤🍎"];
 }
 
 @end

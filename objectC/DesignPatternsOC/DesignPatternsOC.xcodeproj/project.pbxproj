@@ -21,6 +21,9 @@
 		4507953926B56F5800607614 /* XiaoMiTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953826B56F5800607614 /* XiaoMiTV.m */; };
 		4507953C26B56F7700607614 /* KangjiaTeleControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953B26B56F7700607614 /* KangjiaTeleControl.m */; };
 		4507953F26B56F8500607614 /* XiaomiTeleControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953E26B56F8500607614 /* XiaomiTeleControl.m */; };
+		454273A626C3EA9300F04D74 /* Buyer.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A526C3EA9300F04D74 /* Buyer.m */; };
+		454273A926C3EAA500F04D74 /* Seller.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A826C3EAA500F04D74 /* Seller.m */; };
+		454273AC26C3EAF200F04D74 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273AB26C3EAF200F04D74 /* Agent.m */; };
 		455200CA2594D82100AD8F8D /* SSingletonUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200C92594D82100AD8F8D /* SSingletonUserInfo.m */; };
 		455200CD2594DE3B00AD8F8D /* SSingletonSubUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200CC2594DE3B00AD8F8D /* SSingletonSubUserInfo.m */; };
 		455200D12594EE2300AD8F8D /* BCarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 455200D02594EE2300AD8F8D /* BCarBuilder.m */; };
@@ -97,6 +100,12 @@
 		4507953B26B56F7700607614 /* KangjiaTeleControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KangjiaTeleControl.m; sourceTree = "<group>"; };
 		4507953D26B56F8500607614 /* XiaomiTeleControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiaomiTeleControl.h; sourceTree = "<group>"; };
 		4507953E26B56F8500607614 /* XiaomiTeleControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiaomiTeleControl.m; sourceTree = "<group>"; };
+		454273A426C3EA9300F04D74 /* Buyer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Buyer.h; sourceTree = "<group>"; };
+		454273A526C3EA9300F04D74 /* Buyer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Buyer.m; sourceTree = "<group>"; };
+		454273A726C3EAA500F04D74 /* Seller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Seller.h; sourceTree = "<group>"; };
+		454273A826C3EAA500F04D74 /* Seller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Seller.m; sourceTree = "<group>"; };
+		454273AA26C3EAF200F04D74 /* Agent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
+		454273AB26C3EAF200F04D74 /* Agent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
 		455200C82594D82100AD8F8D /* SSingletonUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonUserInfo.h; sourceTree = "<group>"; };
 		455200C92594D82100AD8F8D /* SSingletonUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSingletonUserInfo.m; sourceTree = "<group>"; };
 		455200CB2594DE3B00AD8F8D /* SSingletonSubUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSingletonSubUserInfo.h; sourceTree = "<group>"; };
@@ -284,6 +293,19 @@
 				45E23BDD26B059F200091050 /* SubscribeServiceCenter.m */,
 			);
 			path = observer;
+			sourceTree = "<group>";
+		};
+		454273A326C3BA1D00F04D74 /* proxy */ = {
+			isa = PBXGroup;
+			children = (
+				454273A426C3EA9300F04D74 /* Buyer.h */,
+				454273A526C3EA9300F04D74 /* Buyer.m */,
+				454273A726C3EAA500F04D74 /* Seller.h */,
+				454273A826C3EAA500F04D74 /* Seller.m */,
+				454273AA26C3EAF200F04D74 /* Agent.h */,
+				454273AB26C3EAF200F04D74 /* Agent.m */,
+			);
+			path = proxy;
 			sourceTree = "<group>";
 		};
 		455200C72594D73600AD8F8D /* singleton */ = {
@@ -478,6 +500,7 @@
 		45E5202E2590E7FB0012E838 /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				454273A326C3BA1D00F04D74 /* proxy */,
 				4507952626B3B58700607614 /* bridge */,
 				4507950126B2F84100607614 /* decorator */,
 				450663202614F2E7000D06C6 /* adapter */,
@@ -644,7 +667,9 @@
 				4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */,
 				4553C488259387ED00856E84 /* AFBasePhone.m in Sources */,
 				455200DB2594F14E00AD8F8D /* BEngineOne.m in Sources */,
+				454273AC26C3EAF200F04D74 /* Agent.m in Sources */,
 				4553C49425938C8C00856E84 /* AFAndroidFactory.m in Sources */,
+				454273A926C3EAA500F04D74 /* Seller.m in Sources */,
 				45E5201B2590E7140012E838 /* ViewController.m in Sources */,
 				4553C49125938C7E00856E84 /* AFAppleFactory.m in Sources */,
 				45F23B98268CC03A005E7047 /* SelectionSort.m in Sources */,
@@ -658,6 +683,7 @@
 				45E520262590E7170012E838 /* main.m in Sources */,
 				45EA05B22634813E00CE7214 /* Vol110.m in Sources */,
 				45E520182590E7140012E838 /* SceneDelegate.m in Sources */,
+				454273A626C3EA9300F04D74 /* Buyer.m in Sources */,
 				45EA05AB26347D3800CE7214 /* ChargeAdapter110.m in Sources */,
 				4506631C2614E7ED000D06C6 /* Square.m in Sources */,
 				455200E12594F16900AD8F8D /* BDoorOne.m in Sources */,
