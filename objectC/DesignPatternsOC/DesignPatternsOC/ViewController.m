@@ -54,6 +54,9 @@
 #import "structural/proxy/Agent.h"
 #import "structural/proxy/AdvanceMaleAgent.h"
 #import "structural/proxy/AdvanceAgentProxy.h"
+// 备忘录
+#import "behavioral/memento/MementoCenter.h"
+#import "behavioral/memento/Schedule.h"
 
 @interface ViewController () <SubscriptionServiceCenterProtocol, AdvanceAgentProxy>
 
@@ -92,7 +95,9 @@
     
 //    [self testBridge];
     
-    [self testProxy];
+//    [self testProxy];
+    
+    [self testMemento];
     
 }
 
@@ -285,6 +290,32 @@
 
 - (void)cleanUp {
     NSLog(@"proxy %@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+}
+
+// 备忘录
+- (void)testMemento {
+    Schedule *schedule = [[Schedule alloc] init];
+    NSDate *now = [NSDate now];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    schedule.date = [dateFormatter stringFromDate:now];
+    schedule.events = @"上班";
+    NSLog(@"original：%@", schedule); // 上班
+    
+    NSString *key1 = @"mementoKey1";
+    schedule.events = @"休息";
+    NSLog(@"new1：%@", schedule); // 休息
+    [schedule recoveryFromState:[MementoCenter mementoObjectWithKey:key1]];
+    NSLog(@"recovery1：%@", schedule); // 上一次保存值
+    schedule.events = @"健身";
+    NSLog(@"new2：%@ and save", schedule); // 健身
+    [MementoCenter saveMementoObject:[schedule currentState] withKey:key1];
+    schedule.events = @"吃饭";
+    NSLog(@"new 3：%@ and recovery", schedule); // 吃饭
+    [schedule recoveryFromState:[MementoCenter mementoObjectWithKey:key1]];
+    NSLog(@"recovery2：%@", schedule); // 健身
+    schedule.events = @"上班";
+    [MementoCenter saveMementoObject:[schedule currentState] withKey:key1];
 }
 
 @end

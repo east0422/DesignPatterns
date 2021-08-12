@@ -21,6 +21,8 @@
 		4507953926B56F5800607614 /* XiaoMiTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953826B56F5800607614 /* XiaoMiTV.m */; };
 		4507953C26B56F7700607614 /* KangjiaTeleControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953B26B56F7700607614 /* KangjiaTeleControl.m */; };
 		4507953F26B56F8500607614 /* XiaomiTeleControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953E26B56F8500607614 /* XiaomiTeleControl.m */; };
+		450B468E26C4F811009D833A /* MementoCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 450B468D26C4F811009D833A /* MementoCenter.m */; };
+		450B469126C5035D009D833A /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 450B469026C5035D009D833A /* Schedule.m */; };
 		454273A626C3EA9300F04D74 /* Buyer.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A526C3EA9300F04D74 /* Buyer.m */; };
 		454273A926C3EAA500F04D74 /* Seller.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A826C3EAA500F04D74 /* Seller.m */; };
 		454273AC26C3EAF200F04D74 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273AB26C3EAF200F04D74 /* Agent.m */; };
@@ -103,6 +105,11 @@
 		4507953B26B56F7700607614 /* KangjiaTeleControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KangjiaTeleControl.m; sourceTree = "<group>"; };
 		4507953D26B56F8500607614 /* XiaomiTeleControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiaomiTeleControl.h; sourceTree = "<group>"; };
 		4507953E26B56F8500607614 /* XiaomiTeleControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiaomiTeleControl.m; sourceTree = "<group>"; };
+		450B468B26C4F803009D833A /* MementoCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MementoCenterProtocol.h; sourceTree = "<group>"; };
+		450B468C26C4F811009D833A /* MementoCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MementoCenter.h; sourceTree = "<group>"; };
+		450B468D26C4F811009D833A /* MementoCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MementoCenter.m; sourceTree = "<group>"; };
+		450B468F26C5035D009D833A /* Schedule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		450B469026C5035D009D833A /* Schedule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 		454273A426C3EA9300F04D74 /* Buyer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Buyer.h; sourceTree = "<group>"; };
 		454273A526C3EA9300F04D74 /* Buyer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Buyer.m; sourceTree = "<group>"; };
 		454273A726C3EAA500F04D74 /* Seller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Seller.h; sourceTree = "<group>"; };
@@ -283,6 +290,18 @@
 				4507953E26B56F8500607614 /* XiaomiTeleControl.m */,
 			);
 			path = bridge;
+			sourceTree = "<group>";
+		};
+		450B468A26C4D42D009D833A /* memento */ = {
+			isa = PBXGroup;
+			children = (
+				450B468B26C4F803009D833A /* MementoCenterProtocol.h */,
+				450B468C26C4F811009D833A /* MementoCenter.h */,
+				450B468D26C4F811009D833A /* MementoCenter.m */,
+				450B468F26C5035D009D833A /* Schedule.h */,
+				450B469026C5035D009D833A /* Schedule.m */,
+			);
+			path = memento;
 			sourceTree = "<group>";
 		};
 		452F147B263876E700E11F35 /* strategy */ = {
@@ -529,6 +548,7 @@
 		45E5202F2590E7FF0012E838 /* behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				450B468A26C4D42D009D833A /* memento */,
 				45405BFB26AEFFEE008F2411 /* observer */,
 				452F147B263876E700E11F35 /* strategy */,
 			);
@@ -687,10 +707,12 @@
 				4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */,
 				4553C488259387ED00856E84 /* AFBasePhone.m in Sources */,
 				455200DB2594F14E00AD8F8D /* BEngineOne.m in Sources */,
+				450B469126C5035D009D833A /* Schedule.m in Sources */,
 				454273AC26C3EAF200F04D74 /* Agent.m in Sources */,
 				4553C49425938C8C00856E84 /* AFAndroidFactory.m in Sources */,
 				454273A926C3EAA500F04D74 /* Seller.m in Sources */,
 				45E5201B2590E7140012E838 /* ViewController.m in Sources */,
+				450B468E26C4F811009D833A /* MementoCenter.m in Sources */,
 				4553C49125938C7E00856E84 /* AFAppleFactory.m in Sources */,
 				45F23B98268CC03A005E7047 /* SelectionSort.m in Sources */,
 				45E520152590E7140012E838 /* AppDelegate.m in Sources */,
