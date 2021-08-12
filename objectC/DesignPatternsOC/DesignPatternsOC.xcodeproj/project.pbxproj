@@ -23,6 +23,7 @@
 		4507953F26B56F8500607614 /* XiaomiTeleControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507953E26B56F8500607614 /* XiaomiTeleControl.m */; };
 		450B468E26C4F811009D833A /* MementoCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 450B468D26C4F811009D833A /* MementoCenter.m */; };
 		450B469126C5035D009D833A /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 450B469026C5035D009D833A /* Schedule.m */; };
+		450B469426C59745009D833A /* NSObject+MementoCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 450B469326C59745009D833A /* NSObject+MementoCenter.m */; };
 		454273A626C3EA9300F04D74 /* Buyer.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A526C3EA9300F04D74 /* Buyer.m */; };
 		454273A926C3EAA500F04D74 /* Seller.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A826C3EAA500F04D74 /* Seller.m */; };
 		454273AC26C3EAF200F04D74 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273AB26C3EAF200F04D74 /* Agent.m */; };
@@ -110,6 +111,8 @@
 		450B468D26C4F811009D833A /* MementoCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MementoCenter.m; sourceTree = "<group>"; };
 		450B468F26C5035D009D833A /* Schedule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
 		450B469026C5035D009D833A /* Schedule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		450B469226C59745009D833A /* NSObject+MementoCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MementoCenter.h"; sourceTree = "<group>"; };
+		450B469326C59745009D833A /* NSObject+MementoCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MementoCenter.m"; sourceTree = "<group>"; };
 		454273A426C3EA9300F04D74 /* Buyer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Buyer.h; sourceTree = "<group>"; };
 		454273A526C3EA9300F04D74 /* Buyer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Buyer.m; sourceTree = "<group>"; };
 		454273A726C3EAA500F04D74 /* Seller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Seller.h; sourceTree = "<group>"; };
@@ -300,6 +303,8 @@
 				450B468D26C4F811009D833A /* MementoCenter.m */,
 				450B468F26C5035D009D833A /* Schedule.h */,
 				450B469026C5035D009D833A /* Schedule.m */,
+				450B469226C59745009D833A /* NSObject+MementoCenter.h */,
+				450B469326C59745009D833A /* NSObject+MementoCenter.m */,
 			);
 			path = memento;
 			sourceTree = "<group>";
@@ -689,6 +694,7 @@
 				45EA05AF2634803600CE7214 /* VolAdapter.m in Sources */,
 				45EA05A726347BDE00CE7214 /* ChargeAdapter.m in Sources */,
 				455200E42594F17300AD8F8D /* BBodyOne.m in Sources */,
+				450B469426C59745009D833A /* NSObject+MementoCenter.m in Sources */,
 				4507953026B53BE200607614 /* TV.m in Sources */,
 				4506631F2614E828000D06C6 /* ShapeMaker.m in Sources */,
 				455200DE2594F15C00AD8F8D /* BWheelOne.m in Sources */,

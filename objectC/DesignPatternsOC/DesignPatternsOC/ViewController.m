@@ -57,6 +57,7 @@
 // 备忘录
 #import "behavioral/memento/MementoCenter.h"
 #import "behavioral/memento/Schedule.h"
+#import "behavioral/memento/NSObject+MementoCenter.h"
 
 @interface ViewController () <SubscriptionServiceCenterProtocol, AdvanceAgentProxy>
 
@@ -305,17 +306,21 @@
     NSString *key1 = @"mementoKey1";
     schedule.events = @"休息";
     NSLog(@"new1：%@", schedule); // 休息
-    [schedule recoveryFromState:[MementoCenter mementoObjectWithKey:key1]];
+//    [schedule recoveryFromState:[MementoCenter mementoObjectWithKey:key1]];
+    [schedule recoveryStateWithKey: key1];
     NSLog(@"recovery1：%@", schedule); // 上一次保存值
     schedule.events = @"健身";
     NSLog(@"new2：%@ and save", schedule); // 健身
-    [MementoCenter saveMementoObject:[schedule currentState] withKey:key1];
+//    [MementoCenter saveMementoObject:[schedule currentState] withKey:key1];
+    [schedule saveStateWithKey:key1];
     schedule.events = @"吃饭";
     NSLog(@"new 3：%@ and recovery", schedule); // 吃饭
-    [schedule recoveryFromState:[MementoCenter mementoObjectWithKey:key1]];
+//    [schedule recoveryFromState:[MementoCenter mementoObjectWithKey:key1]];
+    [schedule recoveryStateWithKey:key1];
     NSLog(@"recovery2：%@", schedule); // 健身
     schedule.events = @"上班";
-    [MementoCenter saveMementoObject:[schedule currentState] withKey:key1];
+//    [MementoCenter saveMementoObject:[schedule currentState] withKey:key1];
+    [schedule saveStateWithKey:key1];
 }
 
 @end
