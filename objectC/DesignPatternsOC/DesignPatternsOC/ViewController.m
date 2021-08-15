@@ -62,6 +62,8 @@
 #import "behavioral/command/Invoker.h"
 #import "behavioral/command/Receiver.h"
 #import "behavioral/command/VolumeCommand.h"
+// 组合
+#import "structural/composite/Node.h"
 
 @interface ViewController () <SubscriptionServiceCenterProtocol, AdvanceAgentProxy>
 
@@ -104,7 +106,9 @@
     
 //    [self testMemento];
     
-    [self testCommand];
+//    [self testCommand];
+    
+    [self testComposite];
     
 }
 
@@ -335,6 +339,19 @@
     Invoker *invoker = [Invoker shareInstance];
     [invoker addAndExcute:volCommand];
     [invoker rollBack];
+}
+
+// 组合
+- (void)testComposite {
+    Node *rootNode = [Node initNodeWithName:@"A"];
+    [rootNode addNode:[Node initNodeWithName:@"B"]];
+    Node *cNode = [Node initNodeWithName:@"C"];
+    [cNode addNode:[Node initNodeWithName:@"E"]];
+    [cNode addNode:[Node initNodeWithName:@"F"]];
+    [rootNode addNode:cNode];
+    [rootNode addNode:[Node initNodeWithName:@"D"]];
+    
+    NSLog(@"%@", rootNode);
 }
 
 @end

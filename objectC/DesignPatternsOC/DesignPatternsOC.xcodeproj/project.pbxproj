@@ -27,6 +27,7 @@
 		4511BDCA26C8D3780037B884 /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4511BDC926C8D3780037B884 /* Invoker.m */; };
 		4511BDCD26C8D3840037B884 /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4511BDCC26C8D3840037B884 /* Receiver.m */; };
 		4511BDD026C917090037B884 /* VolumeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4511BDCF26C917090037B884 /* VolumeCommand.m */; };
+		4511BDD426C94FFE0037B884 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 4511BDD326C94FFE0037B884 /* Node.m */; };
 		454273A626C3EA9300F04D74 /* Buyer.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A526C3EA9300F04D74 /* Buyer.m */; };
 		454273A926C3EAA500F04D74 /* Seller.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A826C3EAA500F04D74 /* Seller.m */; };
 		454273AC26C3EAF200F04D74 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273AB26C3EAF200F04D74 /* Agent.m */; };
@@ -123,6 +124,8 @@
 		4511BDCC26C8D3840037B884 /* Receiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
 		4511BDCE26C917090037B884 /* VolumeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolumeCommand.h; sourceTree = "<group>"; };
 		4511BDCF26C917090037B884 /* VolumeCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumeCommand.m; sourceTree = "<group>"; };
+		4511BDD226C94FFE0037B884 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		4511BDD326C94FFE0037B884 /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		454273A426C3EA9300F04D74 /* Buyer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Buyer.h; sourceTree = "<group>"; };
 		454273A526C3EA9300F04D74 /* Buyer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Buyer.m; sourceTree = "<group>"; };
 		454273A726C3EAA500F04D74 /* Seller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Seller.h; sourceTree = "<group>"; };
@@ -317,6 +320,15 @@
 				450B469326C59745009D833A /* NSObject+MementoCenter.m */,
 			);
 			path = memento;
+			sourceTree = "<group>";
+		};
+		4511BDD126C94FD60037B884 /* composite */ = {
+			isa = PBXGroup;
+			children = (
+				4511BDD226C94FFE0037B884 /* Node.h */,
+				4511BDD326C94FFE0037B884 /* Node.m */,
+			);
+			path = composite;
 			sourceTree = "<group>";
 		};
 		452F147B263876E700E11F35 /* strategy */ = {
@@ -565,6 +577,7 @@
 		45E5202E2590E7FB0012E838 /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				4511BDD126C94FD60037B884 /* composite */,
 				454273A326C3BA1D00F04D74 /* proxy */,
 				4507952626B3B58700607614 /* bridge */,
 				4507950126B2F84100607614 /* decorator */,
@@ -718,6 +731,7 @@
 				457C75E8259A22B700545A64 /* PReceiptModel.m in Sources */,
 				4553C4A625938CDA00856E84 /* AFAndroidTV.m in Sources */,
 				45EA05AF2634803600CE7214 /* VolAdapter.m in Sources */,
+				4511BDD426C94FFE0037B884 /* Node.m in Sources */,
 				45EA05A726347BDE00CE7214 /* ChargeAdapter.m in Sources */,
 				455200E42594F17300AD8F8D /* BBodyOne.m in Sources */,
 				450B469426C59745009D833A /* NSObject+MementoCenter.m in Sources */,
