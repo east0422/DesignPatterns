@@ -58,6 +58,10 @@
 #import "behavioral/memento/MementoCenter.h"
 #import "behavioral/memento/Schedule.h"
 #import "behavioral/memento/NSObject+MementoCenter.h"
+// 命令
+#import "behavioral/command/Invoker.h"
+#import "behavioral/command/Receiver.h"
+#import "behavioral/command/VolumeCommand.h"
 
 @interface ViewController () <SubscriptionServiceCenterProtocol, AdvanceAgentProxy>
 
@@ -98,7 +102,9 @@
     
 //    [self testProxy];
     
-    [self testMemento];
+//    [self testMemento];
+    
+    [self testCommand];
     
 }
 
@@ -321,6 +327,14 @@
     schedule.events = @"上班";
 //    [MementoCenter saveMementoObject:[schedule currentState] withKey:key1];
     [schedule saveStateWithKey:key1];
+}
+
+// 命令
+- (void)testCommand {
+    VolumeCommand *volCommand = [[VolumeCommand alloc] initReceiver:[[Receiver alloc] init]];
+    Invoker *invoker = [Invoker shareInstance];
+    [invoker addAndExcute:volCommand];
+    [invoker rollBack];
 }
 
 @end

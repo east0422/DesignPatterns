@@ -24,6 +24,9 @@
 		450B468E26C4F811009D833A /* MementoCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 450B468D26C4F811009D833A /* MementoCenter.m */; };
 		450B469126C5035D009D833A /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 450B469026C5035D009D833A /* Schedule.m */; };
 		450B469426C59745009D833A /* NSObject+MementoCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 450B469326C59745009D833A /* NSObject+MementoCenter.m */; };
+		4511BDCA26C8D3780037B884 /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4511BDC926C8D3780037B884 /* Invoker.m */; };
+		4511BDCD26C8D3840037B884 /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4511BDCC26C8D3840037B884 /* Receiver.m */; };
+		4511BDD026C917090037B884 /* VolumeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4511BDCF26C917090037B884 /* VolumeCommand.m */; };
 		454273A626C3EA9300F04D74 /* Buyer.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A526C3EA9300F04D74 /* Buyer.m */; };
 		454273A926C3EAA500F04D74 /* Seller.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273A826C3EAA500F04D74 /* Seller.m */; };
 		454273AC26C3EAF200F04D74 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 454273AB26C3EAF200F04D74 /* Agent.m */; };
@@ -113,6 +116,13 @@
 		450B469026C5035D009D833A /* Schedule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 		450B469226C59745009D833A /* NSObject+MementoCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MementoCenter.h"; sourceTree = "<group>"; };
 		450B469326C59745009D833A /* NSObject+MementoCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MementoCenter.m"; sourceTree = "<group>"; };
+		4511BDC726C8D3150037B884 /* CommandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandProtocol.h; sourceTree = "<group>"; };
+		4511BDC826C8D3780037B884 /* Invoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invoker.h; sourceTree = "<group>"; };
+		4511BDC926C8D3780037B884 /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
+		4511BDCB26C8D3840037B884 /* Receiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
+		4511BDCC26C8D3840037B884 /* Receiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
+		4511BDCE26C917090037B884 /* VolumeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolumeCommand.h; sourceTree = "<group>"; };
+		4511BDCF26C917090037B884 /* VolumeCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumeCommand.m; sourceTree = "<group>"; };
 		454273A426C3EA9300F04D74 /* Buyer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Buyer.h; sourceTree = "<group>"; };
 		454273A526C3EA9300F04D74 /* Buyer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Buyer.m; sourceTree = "<group>"; };
 		454273A726C3EAA500F04D74 /* Seller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Seller.h; sourceTree = "<group>"; };
@@ -317,6 +327,20 @@
 				45F23BA1268CC122005E7047 /* Context.m */,
 			);
 			path = strategy;
+			sourceTree = "<group>";
+		};
+		45365D2526C8055B00E87E95 /* command */ = {
+			isa = PBXGroup;
+			children = (
+				4511BDC726C8D3150037B884 /* CommandProtocol.h */,
+				4511BDC826C8D3780037B884 /* Invoker.h */,
+				4511BDC926C8D3780037B884 /* Invoker.m */,
+				4511BDCB26C8D3840037B884 /* Receiver.h */,
+				4511BDCC26C8D3840037B884 /* Receiver.m */,
+				4511BDCE26C917090037B884 /* VolumeCommand.h */,
+				4511BDCF26C917090037B884 /* VolumeCommand.m */,
+			);
+			path = command;
 			sourceTree = "<group>";
 		};
 		45405BFB26AEFFEE008F2411 /* observer */ = {
@@ -553,6 +577,7 @@
 		45E5202F2590E7FF0012E838 /* behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				45365D2526C8055B00E87E95 /* command */,
 				450B468A26C4D42D009D833A /* memento */,
 				45405BFB26AEFFEE008F2411 /* observer */,
 				452F147B263876E700E11F35 /* strategy */,
@@ -684,6 +709,7 @@
 			files = (
 				454273B026C41D4200F04D74 /* MethodNotFound.m in Sources */,
 				4507952526B305E200607614 /* Tea+Temperature.m in Sources */,
+				4511BDCA26C8D3780037B884 /* Invoker.m in Sources */,
 				4507953626B56F4400607614 /* KangjiaTV.m in Sources */,
 				4553C49A25938CA800856E84 /* AFAndroidPhone.m in Sources */,
 				4553C49725938C9F00856E84 /* AFApplePhone.m in Sources */,
@@ -713,6 +739,7 @@
 				4553C4A325938CCF00856E84 /* AFAppleTV.m in Sources */,
 				4553C488259387ED00856E84 /* AFBasePhone.m in Sources */,
 				455200DB2594F14E00AD8F8D /* BEngineOne.m in Sources */,
+				4511BDCD26C8D3840037B884 /* Receiver.m in Sources */,
 				450B469126C5035D009D833A /* Schedule.m in Sources */,
 				454273AC26C3EAF200F04D74 /* Agent.m in Sources */,
 				4553C49425938C8C00856E84 /* AFAndroidFactory.m in Sources */,
@@ -742,6 +769,7 @@
 				4507952026B301D900607614 /* Tea+Species.m in Sources */,
 				450663192614E7BD000D06C6 /* Rectangle.m in Sources */,
 				45EA05B52634814700CE7214 /* Vol220.m in Sources */,
+				4511BDD026C917090037B884 /* VolumeCommand.m in Sources */,
 				4553C48E2593880200856E84 /* AFBaseTV.m in Sources */,
 				455200CD2594DE3B00AD8F8D /* SSingletonSubUserInfo.m in Sources */,
 				4553C474259379BC00856E84 /* SFAndroidPhone.m in Sources */,
